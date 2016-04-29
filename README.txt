@@ -1,0 +1,10 @@
+Russian data from the Syntagrus corpus.
+
+=== Machine-readable metadata =================================================
+Documentation status: partial
+Data source: semi-automatic
+Data available since: UD v1.3
+License:
+Genre:
+Contributors: Droganova, Kira; Lyashevskaya, Olga; Toldova, Svetlana; Kutuzov, Andrey; Mustafina, Nina; Alexeeva, Maria; Shakurova, Elena
+===============================================================================
