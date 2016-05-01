@@ -6,5 +6,5 @@ Data source: semi-automatic
 Data available since: UD v1.3
 License:
 Genre:
-Contributors: Droganova, Kira; Lyashevskaya, Olga; Toldova, Svetlana; Kutuzov, Andrey; Mustafina, Nina; Alexeeva, Maria; Shakurova, Elena
+Contributors: Droganova, Kira; Lyashevskaya, Olga;
 ===============================================================================
