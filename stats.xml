@@ -12,12 +12,12 @@
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments with the most frequent lemmas are optional (but easy to obtain). -->
   <tags unique="15">
-    <tag name="ADJ">113392</tag><!-- КОТОРЫЙ, ОДИН, ДРУГОЙ, НОВЫЙ, САМЫЙ, ПЕРВЫЙ, САМ, ДОЛЖЕН, РОССИЙСКИЙ, БОЛЬШОЙ -->
+    <tag name="ADJ">114280</tag><!-- КОТОРЫЙ, ОДИН, ДРУГОЙ, НОВЫЙ, САМЫЙ, ПЕРВЫЙ, САМ, ДОЛЖЕН, РОССИЙСКИЙ, БОЛЬШОЙ -->
     <tag name="ADP">95697</tag><!-- В, НА, С, ПО, К, ИЗ, О, ДЛЯ, ОТ, ЗА -->
     <tag name="ADV">55042</tag><!-- ТАК, УЖЕ, ЕЩЕ, МОЖНО, БОЛЕЕ, КАК, ОЧЕНЬ, ОДНАКО, ГДЕ, СЕЙЧАС -->
     <tag name="AUX">7893</tag><!-- БЫТЬ -->
     <tag name="CONJ">40610</tag><!-- И, А, НО, ИЛИ, ТО, ЧЕМ, НИ, ПОТОМУ_ЧТО, ПОСКОЛЬКУ, ДА -->
-    <tag name="DET">22115</tag><!-- ЭТОТ, СВОЙ, ВЕСЬ, ТАКОЙ, ТОТ, НАШ, ЕГО, ИХ, ЕЕ, МОЙ -->
+    <tag name="DET">21227</tag><!-- ЭТОТ, СВОЙ, ВЕСЬ, ТАКОЙ, НАШ, ТОТ, ЕГО, ИХ, ЕЕ, МОЙ -->
     <tag name="INTJ">95</tag><!-- АХ, О, ОХ, А, ТА-ДА-ДАМ, ЭХ, ОЙ, АЙ, АЛЛО, БА -->
     <tag name="NOUN">299598</tag><!-- ЭТО, ГОД, ТО, ЧЕЛОВЕК, РОССИЯ, ВРЕМЯ, ВСЕ, СТРАНА, ДЕЛО, РАБОТА -->
     <tag name="NUM">13280</tag><!-- ДВА, НЕСКОЛЬКО, ТРИ, 1, 10, 20, 2, ПЯТЬ, ЧЕТЫРЕ, 15 -->
@@ -30,8 +30,8 @@
   </tags>
   <!-- Statistics of features and values. The comments with the most frequent word forms are optional (but easy to obtain). -->
   <feats unique="35">
-    <feat name="Animacy" value="Anim" upos="ADJ,NOUN,NUM,VERB">54155</feat><!-- человек, люди, людей, человека, все, ученые, президента, Путин, В., президент -->
-    <feat name="Animacy" value="Inan" upos="ADJ,NOUN,NUM,VERB">258179</feat><!-- это, года, России, лет, время, того, году, том, все, этом -->
+    <feat name="Animacy" value="Anim" upos="ADJ,NOUN,NUM,VERB">54161</feat><!-- человек, люди, людей, человека, все, ученые, президента, Путин, В., президент -->
+    <feat name="Animacy" value="Inan" upos="ADJ,NOUN,NUM,VERB">258279</feat><!-- это, года, России, лет, время, того, году, том, все, этом -->
     <feat name="Aspect" value="Imp" upos="AUX,VERB">74325</feat><!-- было, был, может, будет, были, быть, есть, была, нет, могут -->
     <feat name="Aspect" value="Perf" upos="VERB">50836</feat><!-- стал, сказал, стало, стали, сделать, сказать, заявил, получить, удалось, стать -->
     <feat name="Case" value="Acc" upos="ADJ,DET,NOUN,NUM,VERB">75537</feat><!-- время, это, все, то, свою, свои, несколько, этот, раз, год -->
@@ -43,7 +43,7 @@
     <feat name="Case" value="Par" upos="NOUN">86</feat><!-- виду, народу, толку, разу, чаю, ходу, голоду, дому, сахару, глазу -->
     <feat name="Case" value="Voc" upos="NOUN">16</feat><!-- господи, боже, Володь, Серег, дедуль -->
     <feat name="Degree" value="Cmp" upos="ADJ,ADV">2861</feat><!-- больше, лучше, меньше, раньше, выше, дальше, чаще, хуже, позже, ниже -->
-    <feat name="Degree" value="Pos" upos="ADJ,ADV">165098</feat><!-- так, уже, еще, можно, которые, более, как, очень, однако, где -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV">165986</feat><!-- так, уже, еще, можно, которые, более, как, очень, однако, где -->
     <feat name="Degree" value="Sup" upos="ADJ">475</feat><!-- важнейших, важнейшим, крупнейших, крупнейшие, новейшие, ближайших, важнейший, крупнейшей, важнейшая, важнейшие -->
     <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,VERB">138684</feat><!-- России, была, этой, жизни, власти, которая, страны, своей, эта, которой -->
     <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,VERB">190700</feat><!-- был, года, лет, году, который, этот, один, человек, люди, людей -->
@@ -67,38 +67,40 @@
     <feat name="Voice" value="Pass" upos="VERB">14059</feat><!-- считается, говорится, связано, связаны, используются, используется, сделано, связана, принято, связанных -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="32">
-    <dep name="acl">2123</dep>
-    <dep name="acl:relcl">6649</dep>
-    <dep name="advcl">16893</dep>
-    <dep name="advmod">63212</dep>
-    <dep name="amod">116239</dep>
-    <dep name="appos">7930</dep>
-    <dep name="aux">2243</dep>
+  <deps unique="34">
+    <dep name="acl">2071</dep>
+    <dep name="acl:relcl">6627</dep>
+    <dep name="advcl">16742</dep>
+    <dep name="advmod">63530</dep>
+    <dep name="amod">97892</dep>
+    <dep name="appos">7922</dep>
+    <dep name="aux">2244</dep>
     <dep name="auxpass">2568</dep>
     <dep name="case">95548</dep>
-    <dep name="cc">11215</dep>
-    <dep name="ccomp">920</dep>
+    <dep name="cc">41123</dep>
+    <dep name="ccomp">892</dep>
     <dep name="compound">1929</dep>
+    <dep name="conj">48527</dep>
     <dep name="cop">5083</dep>
-    <dep name="dep">84128</dep>
-    <dep name="dobj">88696</dep>
+    <dep name="dep">4518</dep>
+    <dep name="det">21227</dep>
+    <dep name="dobj">88674</dep>
     <dep name="expl">33</dep>
-    <dep name="iobj">17962</dep>
-    <dep name="mark">12289</dep>
-    <dep name="mwe">1074</dep>
-    <dep name="name">5272</dep>
-    <dep name="neg">13298</dep>
-    <dep name="nmod">104802</dep>
+    <dep name="iobj">2948</dep>
+    <dep name="mark">14440</dep>
+    <dep name="mwe">1090</dep>
+    <dep name="name">5273</dep>
+    <dep name="neg">13290</dep>
+    <dep name="nmod">117253</dep>
     <dep name="nmod:agent">1835</dep>
-    <dep name="nsubj">76091</dep>
-    <dep name="nsubjpass">7049</dep>
-    <dep name="nummod">8478</dep>
+    <dep name="nsubj">74945</dep>
+    <dep name="nsubjpass">6958</dep>
+    <dep name="nummod">8514</dep>
     <dep name="nummod:entity">309</dep>
     <dep name="nummod:gov">1004</dep>
-    <dep name="parataxis">21334</dep>
+    <dep name="parataxis">21201</dep>
     <dep name="punct">188918</dep>
     <dep name="root">59130</dep>
-    <dep name="xcomp">8390</dep>
+    <dep name="xcomp">8386</dep>
   </deps>
 </treebank>
