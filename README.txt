@@ -7,6 +7,7 @@ Data available since: UD v1.3
 License: CC BY-NC-SA 4.0
 Genre: news nonfiction fiction
 Contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel; Shakurova, Lena; Mustafina, Nina
+Contact: zeman@ufal.mff.cuni.cz
 ===============================================================================
 Data contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel
 Documentation contributors: Shakurova, Lena; Mustafina, Nina
@@ -26,7 +27,7 @@ with comprehensive morphological annotation and syntactic annotation in the
 form of a complete dependency tree provided for every sentence. Additionally,
 SynTagRus contains other types of annotation, first of all lexical functional
 annotation in terms of lexical functions as defined in the Meaning-Text model.
- 
+
 It is an integral but fully autonomous part of the Russian National Corpus
 developed in a nationwide research project and can be freely consulted on the
 Web: http://www.ruscorpora.ru/instruction-syntax.html
