@@ -52,3 +52,12 @@ process:
    spaces have been replaced with '_' ("что_ни_на_есть", "хотя_бы"). This is
    a temporary solution. Such tokens will be replaced with series of separate
    tokens connected with mwe relation in the next release.
+
+
+Changelog
+
+2016-11-15 v1.4
+  * Fixed peculiar Latin/Cyrillic encoding errors.
+  * Lemmas are now lowercased as in other treebanks.
+  * PROPN distinguished from NOUN, using heuristics based on upper/lowercase.
+  * Added "foreign" dependencies.
