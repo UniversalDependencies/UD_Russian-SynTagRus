@@ -25,8 +25,9 @@ online news etc.)
 The treebank is so far the only human-corrected corpus of Russian supplied
 with comprehensive morphological annotation and syntactic annotation in the
 form of a complete dependency tree provided for every sentence. Additionally,
-SynTagRus contains other types of annotation, first of all lexical functional
-annotation in terms of lexical functions as defined in the Meaning-Text model.
+the original version of SynTagRus contains other types of annotation, first of 
+all lexical functional annotation in terms of lexical functions as defined 
+in the Meaning-Text model.
 
 It is an integral but fully autonomous part of the Russian National Corpus
 developed in a nationwide research project and can be freely consulted on the
