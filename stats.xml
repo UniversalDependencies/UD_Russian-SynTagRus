@@ -31,7 +31,7 @@
     <tag name="X">512</tag><!-- and, of, in, the, for, mignews.com, di, money, pylori, ultrabrain -->
   </tags>
   <!-- Statistics of features and values. The comments with the most frequent word forms are optional (but easy to obtain). -->
-  <feats unique="36">
+  <feats unique="37">
     <feat name="Animacy" value="Anim" upos="ADJ,NOUN,NUM,PRON,PROPN,VERB">55361</feat><!-- человек, люди, людей, человека, ученые, все, президента, Путин, В, президент -->
     <feat name="Animacy" value="Inan" upos="ADJ,NOUN,NUM,PRON,PROPN,VERB">266761</feat><!-- это, года, России, лет, время, году, того, том, этом, все -->
     <feat name="Aspect" value="Imp" upos="AUX,VERB">76109</feat><!-- было, был, может, будет, были, быть, есть, была, нет, могут -->
@@ -62,6 +62,7 @@
     <feat name="Tense" value="Fut" upos="VERB">5570</feat><!-- станет, скажем, придется, сможет, смогут, удастся, окажется, пойдет, станут, позволит -->
     <feat name="Tense" value="Past" upos="AUX,VERB">56461</feat><!-- было, был, были, была, стал, сказал, стало, стали, мог, заявил -->
     <feat name="Tense" value="Pres" upos="AUX,VERB">42206</feat><!-- может, будет, есть, нет, могут, будут, является, говорит, стоит, идет -->
+    <feat name="Variant" value="Short" upos="ADJ,VERB">14173</feat><!-- нужно, должны, должен, должна, известно, необходимо, невозможно, должно, важно, трудно -->
     <feat name="VerbForm" value="Conv" upos="AUX,VERB">3999</feat><!-- говоря, начиная, судя, учитывая, будучи, исходя, имея, используя, глядя, выступая -->
     <feat name="VerbForm" value="Fin" upos="AUX,VERB">83336</feat><!-- было, был, может, будет, были, есть, была, нет, могут, будут -->
     <feat name="VerbForm" value="Inf" upos="AUX,VERB">23210</feat><!-- быть, сделать, сказать, делать, получить, говорить, работать, стать, иметь, жить -->
