@@ -1,17 +1,8 @@
+# Summary
+
 Russian data from the SynTagRus corpus.
 
-=== Machine-readable metadata =================================================
-Documentation status: partial
-Data source: semi-automatic
-Data available since: UD v1.3
-License: CC BY-NC-SA 4.0
-Genre: news nonfiction fiction
-Contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel; Shakurova, Lena; Mustafina, Nina
-Contact: zeman@ufal.mff.cuni.cz
-===============================================================================
-Data contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel
-Documentation contributors: Shakurova, Lena; Mustafina, Nina
-
+# Introduction
 
 The SynTagRus dependency treebank is being developed by the Computational
 Linguistics Laboratory, A.A.Kharkevich Institute of Information Transmission
@@ -25,8 +16,8 @@ online news etc.)
 The treebank is so far the only human-corrected corpus of Russian supplied
 with comprehensive morphological annotation and syntactic annotation in the
 form of a complete dependency tree provided for every sentence. Additionally,
-the original version of SynTagRus contains other types of annotation, first of 
-all lexical functional annotation in terms of lexical functions as defined 
+the original version of SynTagRus contains other types of annotation, first of
+all lexical functional annotation in terms of lexical functions as defined
 in the Meaning-Text model.
 
 It is an integral but fully autonomous part of the Russian National Corpus
@@ -42,23 +33,40 @@ For more details, see the recently published paper (in Russian):
 языка им. В.В. Виноградова. М., 2015. Вып. 6. С. 272-299.
 
 
-The UD-style corpus inherited some peculiarities during the conversion
-process:
+#Changelog
 
-1. Elliptic constructions and sentences with foreign (non-Russian) words
-   represented in SynTagRus were omitted.
+*2017-03-01 v2.1
+  * Conversion rules for syntax completely rewritten
+  * PROPN distinguishing from NOUN improved
+  * csubj added
+  * Elliptic constructions fixed
+  * MWE fixed
 
-2. In the SynTagRus corpus, certain multiword expressions are represented as
-   single tokens. The UD-style corpus contains these tokens as well, but
-   spaces have been replaced with '_' ("что_ни_на_есть", "хотя_бы"). This is
-   a temporary solution. Such tokens will be replaced with series of separate
-   tokens connected with mwe relation in the next release.
+*2017-03-01 v2.0
+  * Converted to UD v2 guidelines.
+  * Elliptic constructions added.
+  * Compounds added.
 
-
-Changelog
-
-2016-11-15 v1.4
+*2016-11-15 v1.4
   * Fixed peculiar Latin/Cyrillic encoding errors.
   * Lemmas are now lowercased as in other treebanks.
   * PROPN distinguished from NOUN, using heuristics based on upper/lowercase.
   * Added "foreign" dependencies.
+
+
+=== Machine-readable metadata =================================================
+Data available since: UD v1.3
+License: CC BY-NC-SA 4.0
+Includes text: yes
+Genre: news nonfiction fiction
+Lemmas: converted from manual
+UPOS: converted from manual
+XPOS: not available
+Features: converted from manual
+Relations: converted from manual
+Contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel
+Contributing: elsewhere
+Contact: zeman@ufal.mff.cuni.cz, droganova@ufal.mff.cuni.cz
+===============================================================================
+Data contributors: Droganova, Kira; Lyashevskaya, Olga; Zeman, Daniel
+Documentation contributors: Shakurova, Lena; Mustafina, Nina
