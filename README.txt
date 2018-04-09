@@ -35,14 +35,21 @@ For more details, see the recently published paper (in Russian):
 
 #Changelog
 
-*2017-03-01 v2.1
+*2017-04-15 v2.2
+  * Rules for punctuation implemented
+  * Rules for reported speech implemented
+  * Passives fixed
+  * PROPN distinguishing from NOUN improved
+  * MWE fixed (underscored lemmas)
+
+*2017-11-15 v2.1
   * Conversion rules for syntax completely rewritten
   * PROPN distinguishing from NOUN improved
   * csubj added
   * Elliptic constructions fixed
   * MWE fixed
 
-*2017-03-01 v2.0
+*2017-03-15 v2.0
   * Converted to UD v2 guidelines.
   * Elliptic constructions added.
   * Compounds added.
