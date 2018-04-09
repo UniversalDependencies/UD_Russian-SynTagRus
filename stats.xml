@@ -5,25 +5,25 @@
        fused is the number of tokens that are split to two or more syntactic words
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
-    <total><sentences>61889</sentences><tokens>1107750</tokens><words>1107750</words><fused>0</fused></total>
+    <total><sentences>61889</sentences><tokens>1107735</tokens><words>1107735</words><fused>0</fused></total>
   </size>
-  <lemmas unique="44235" /><!-- ,, ., в, и, ", -, на, не, быть, что, с, он, по, а, это -->
-  <forms unique="115335" /><!-- ,, ., в, и, ", -, на, не, что, с, по, а, как, это, к -->
+  <lemmas unique="44246" /><!-- ,, ., в, и, ", -, на, не, быть, что, с, он, по, а, это -->
+  <forms unique="115334" /><!-- ,, ., в, и, ", -, на, не, что, с, по, а, как, это, к -->
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
   <tags unique="18">
-    <tag name="ADJ">109374</tag><!-- другой, новый, самый, первый, сам, должен, российский, большой, нужный, последний -->
+    <tag name="ADJ">108802</tag><!-- другой, новый, самый, первый, сам, должен, российский, большой, нужный, последний -->
     <tag name="ADP">104065</tag><!-- в, на, с, по, к, из, о, для, от, за -->
-    <tag name="ADV">56354</tag><!-- так, уже, еще, можно, более, как, очень, однако, где, сейчас -->
+    <tag name="ADV">56114</tag><!-- так, уже, еще, можно, более, как, очень, однако, где, сейчас -->
     <tag name="AUX">8145</tag><!-- быть -->
-    <tag name="CCONJ">38999</tag><!-- и, а, но, или, ни, да, либо, причем, зато, только -->
-    <tag name="DET">23398</tag><!-- этот, свой, весь, такой, тот, наш, каждый, какой, некоторый, мой -->
+    <tag name="CCONJ">38998</tag><!-- и, а, но, или, ни, да, либо, причем, зато, только -->
+    <tag name="DET">27808</tag><!-- этот, свой, весь, тот, такой, наш, его, их, каждый, какой -->
     <tag name="INTJ">100</tag><!-- ах, о, ох, а, эх, та-да-дам, ой, ай, алло, ба -->
-    <tag name="NOUN">266300</tag><!-- год, человек, время, страна, дело, работа, система, жизнь, власть, раз -->
-    <tag name="NUM">18044</tag><!-- один, два, много, несколько, три, 1, 10, 20, 2, пять -->
+    <tag name="NOUN">271836</tag><!-- год, человек, время, страна, дело, работа, система, жизнь, власть, вопрос -->
+    <tag name="NUM">18266</tag><!-- один, два, много, несколько, три, 1, 10, 20, 2, пять -->
     <tag name="PART">35385</tag><!-- не, и, же, только, бы, даже, вот, ли, лишь, именно -->
-    <tag name="PRON">52362</tag><!-- он, это, они, который, то, я, она, мы, что, все -->
-    <tag name="PROPN">45897</tag><!-- россия, москва, сша, путин, ссср, владимир, европа, сергей, земля, александр -->
+    <tag name="PRON">49059</tag><!-- он, это, который, они, то, я, мы, она, что, все -->
+    <tag name="PROPN">39830</tag><!-- россия, москва, сша, путин, владимир, ссср, европа, сергей, александр, земля -->
     <tag name="PUNCT">202063</tag><!-- ,, ., ", -, :, ), (, ?, !, … -->
     <tag name="SCONJ">20525</tag><!-- что, как, если, чтобы, когда, то, чем, хотя, поскольку, пока -->
     <tag name="SYM">1041</tag><!-- %, $, №, °, €, +, =, №№, C, ? -->
@@ -33,38 +33,38 @@
   </tags>
   <!-- Statistics of features and values. The comments show the most frequent word forms. -->
   <feats unique="39">
-    <feat name="Animacy" value="Anim" upos="ADJ,NOUN,NUM,PRON,PROPN,VERB">56464</feat><!-- человек, люди, людей, человека, все, ученые, президента, В., Путин, президент -->
-    <feat name="Animacy" value="Inan" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">277739</feat><!-- это, время, года, России, то, лет, году, того, том, все -->
+    <feat name="Animacy" value="Anim" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">56408</feat><!-- человек, люди, людей, человека, все, ученые, президента, В., Путин, президент -->
+    <feat name="Animacy" value="Inan" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">277331</feat><!-- это, время, года, России, то, лет, году, того, том, все -->
     <feat name="Aspect" value="Imp" upos="AUX,VERB">78410</feat><!-- было, был, есть, может, будет, были, быть, была, нет, могут -->
     <feat name="Aspect" value="Perf" upos="VERB">53441</feat><!-- стал, сказал, стало, стали, сделать, сказать, заявил, получить, удалось, стать -->
-    <feat name="Case" value="Acc" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">85738</feat><!-- время, его, это, их, что, все, то, себя, ее, раз -->
-    <feat name="Case" value="Dat" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">27109</feat><!-- ему, мне, нам, себе, им, тому, словам, этому, мнению, всем -->
-    <feat name="Case" value="Gen" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">156113</feat><!-- его, их, года, того, лет, этого, ее, России, нас, них -->
-    <feat name="Case" value="Ins" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">39974</feat><!-- тем, образом, таким, собой, помощью, этим, ним, одним, ними, чем -->
-    <feat name="Case" value="Loc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">50751</feat><!-- том, этом, году, России, случае, результате, стране, самом, числе, мире -->
-    <feat name="Case" value="Nom" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">140899</feat><!-- он, это, я, мы, они, все, она, что, которые, то -->
-    <feat name="Case" value="Par" upos="NOUN,PROPN">104</feat><!-- разу, виду, народу, толку, чаю, ходу, голоду, сахару, дому, глазу -->
+    <feat name="Case" value="Acc" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">86064</feat><!-- время, его, это, их, что, все, то, себя, ее, раз -->
+    <feat name="Case" value="Dat" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">27223</feat><!-- ему, мне, нам, себе, им, тому, словам, этому, мнению, всем -->
+    <feat name="Case" value="Gen" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">153359</feat><!-- года, того, лет, этого, России, нас, них, всего, его, их -->
+    <feat name="Case" value="Ins" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">40092</feat><!-- тем, образом, таким, собой, помощью, этим, ним, одним, ними, чем -->
+    <feat name="Case" value="Loc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">50923</feat><!-- том, этом, году, России, случае, результате, стране, самом, числе, мире -->
+    <feat name="Case" value="Nom" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">141514</feat><!-- он, это, я, мы, они, все, она, что, которые, то -->
+    <feat name="Case" value="Par" upos="NOUN">104</feat><!-- разу, виду, народу, толку, чаю, ходу, голоду, сахару, дому, глазу -->
     <feat name="Case" value="Voc" upos="NOUN,PROPN">16</feat><!-- господи, боже, Володь, Серег, дедуль -->
     <feat name="Degree" value="Cmp" upos="ADJ,ADV">4682</feat><!-- более, больше, менее, лучше, раньше, выше, дальше, чаще, позже, хуже -->
-    <feat name="Degree" value="Pos" upos="ADJ,ADV,DET,NOUN,PROPN">160296</feat><!-- так, уже, еще, можно, как, очень, однако, где, сейчас, например -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV,DET,NOUN,PROPN">160060</feat><!-- так, уже, еще, можно, как, очень, однако, где, сейчас, например -->
     <feat name="Degree" value="Sup" upos="ADJ">505</feat><!-- важнейших, крупнейших, важнейшим, крупнейшие, новейшие, ближайших, важнейший, крупнейшей, важнейшая, важнейшие -->
     <feat name="Foreign" value="Yes" upos="ADJ,NOUN,PROPN,X">2839</feat><!-- MBA, FIA, the, of, ButtKicker, and, PM, RoboCup, FOXP2, Weta -->
-    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">150610</feat><!-- ее, России, она, была, этой, жизни, власти, страны, своей, эта -->
-    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">210484</feat><!-- он, его, был, года, лет, году, этот, один, раз, ему -->
-    <feat name="Gender" value="Neut" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">103959</feat><!-- это, было, то, время, все, том, того, этом, тем, этого -->
+    <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">150299</feat><!-- России, она, была, ее, этой, жизни, власти, страны, своей, эта -->
+    <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">209448</feat><!-- он, был, его, года, лет, году, этот, один, раз, ему -->
+    <feat name="Gender" value="Neut" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">103689</feat><!-- это, было, то, время, все, том, того, этом, тем, этого -->
     <feat name="Mood" value="Cnd" upos="PART,SCONJ">2940</feat><!-- бы, чтобы, чтоб, б -->
     <feat name="Mood" value="Imp" upos="AUX,VERB">1037</feat><!-- см., давайте, будь, представьте, давай, дай, извините, иди, смотри, Вспомните -->
     <feat name="Mood" value="Ind" upos="AUX,VERB">84629</feat><!-- было, был, есть, может, будет, были, была, нет, могут, будут -->
-    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">171038</feat><!-- их, мы, они, все, были, лет, них, нас, эти, всех -->
-    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">411914</feat><!-- это, он, его, я, было, был, то, может, ее, время -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">170782</feat><!-- мы, они, их, все, были, лет, них, нас, эти, всех -->
+    <feat name="Number" value="Sing" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">410296</feat><!-- это, он, я, было, был, его, то, может, время, года -->
     <feat name="Person" value="1" upos="AUX,PRON,VERB">10925</feat><!-- я, мы, нас, мне, меня, нам, скажем, думаю, знаю, будем -->
     <feat name="Person" value="2" upos="AUX,PRON,VERB">3738</feat><!-- вы, ты, вас, вам, тебя, тебе, вами, см., знаете, можете -->
-    <feat name="Person" value="3" upos="AUX,PRON,VERB">55308</feat><!-- он, его, их, они, есть, может, ее, она, будет, них -->
+    <feat name="Person" value="3" upos="AUX,PRON,VERB">52236</feat><!-- он, они, его, есть, может, она, будет, их, них, ее -->
     <feat name="Polarity" value="Neg" upos="ADV,PART">452</feat><!-- не, несмотря, ни, невзирая, нет, нет-нет -->
     <feat name="Tense" value="Fut" upos="VERB">5698</feat><!-- скажем, станет, придется, сможет, смогут, удастся, окажется, пойдет, позволит, станут -->
     <feat name="Tense" value="Past" upos="AUX,VERB">57602</feat><!-- было, был, были, была, стал, сказал, стало, стали, мог, заявил -->
     <feat name="Tense" value="Pres" upos="AUX,VERB">43717</feat><!-- есть, может, будет, нет, могут, будут, является, говорит, стоит, идет -->
-    <feat name="Variant" value="Short" upos="ADJ,PROPN,VERB">14612</feat><!-- нужно, должны, должен, должна, известно, необходимо, невозможно, должно, важно, трудно -->
+    <feat name="Variant" value="Short" upos="ADJ,VERB">14612</feat><!-- нужно, должны, должен, должна, известно, необходимо, невозможно, должно, важно, трудно -->
     <feat name="VerbForm" value="Conv" upos="AUX,VERB">4056</feat><!-- говоря, начиная, учитывая, будучи, судя, исходя, имея, используя, глядя, выступая -->
     <feat name="VerbForm" value="Fin" upos="AUX,VERB">85666</feat><!-- было, был, есть, может, будет, были, была, нет, могут, будут -->
     <feat name="VerbForm" value="Inf" upos="AUX,VERB">23797</feat><!-- быть, сделать, сказать, делать, получить, говорить, работать, стать, иметь, понять -->
@@ -76,42 +76,42 @@
   <!-- Statistics of universal dependency relations. -->
   <deps unique="41">
     <dep name="_">1445</dep>
-    <dep name="acl">11575</dep>
+    <dep name="acl">11573</dep>
     <dep name="acl:relcl">6986</dep>
-    <dep name="advcl">11205</dep>
-    <dep name="advmod">63874</dep>
-    <dep name="amod">90665</dep>
-    <dep name="appos">8848</dep>
+    <dep name="advcl">11188</dep>
+    <dep name="advmod">63875</dep>
+    <dep name="amod">89724</dep>
+    <dep name="appos">8843</dep>
     <dep name="aux">2445</dep>
     <dep name="aux:pass">2693</dep>
-    <dep name="case">102073</dep>
+    <dep name="case">102072</dep>
     <dep name="cc">39368</dep>
-    <dep name="ccomp">5821</dep>
+    <dep name="ccomp">5820</dep>
     <dep name="compound">1092</dep>
-    <dep name="conj">51782</dep>
+    <dep name="conj">51729</dep>
     <dep name="cop">5179</dep>
     <dep name="csubj">6106</dep>
     <dep name="csubj:pass">169</dep>
     <dep name="dep">1</dep>
-    <dep name="det">21729</dep>
-    <dep name="discourse">3928</dep>
+    <dep name="det">26099</dep>
+    <dep name="discourse">4099</dep>
     <dep name="expl">52</dep>
-    <dep name="fixed">9956</dep>
+    <dep name="fixed">9958</dep>
     <dep name="flat">883</dep>
     <dep name="flat:foreign">2218</dep>
     <dep name="flat:name">5563</dep>
-    <dep name="iobj">8229</dep>
-    <dep name="mark">20608</dep>
-    <dep name="nmod">98853</dep>
+    <dep name="iobj">8191</dep>
+    <dep name="mark">20609</dep>
+    <dep name="nmod">95702</dep>
     <dep name="nsubj">72305</dep>
     <dep name="nsubj:pass">7612</dep>
-    <dep name="nummod">12273</dep>
+    <dep name="nummod">12254</dep>
     <dep name="nummod:entity">63</dep>
     <dep name="nummod:gov">4608</dep>
-    <dep name="obj">33973</dep>
-    <dep name="obl">94680</dep>
+    <dep name="obj">33929</dep>
+    <dep name="obl">94583</dep>
     <dep name="orphan">1179</dep>
-    <dep name="parataxis">22921</dep>
+    <dep name="parataxis">22730</dep>
     <dep name="punct">202062</dep>
     <dep name="root">61889</dep>
     <dep name="vocative">15</dep>
