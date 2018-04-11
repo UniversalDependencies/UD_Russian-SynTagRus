@@ -1,16 +1,12 @@
-Sun Feb 11 20:50:30 CET 2018
-perl -I perllib/lib/perl5 -I tools tools/evaluate_treebank.pl --verbose UD_Russian-SynTagRus
 Running the following version of tools/evaluate_treebank.pl:
-commit c1cb17aec6a5505b56b885f578dc6b1093bb4b30
+commit 87d374bbd458d29331d76014d05c52eaac32518d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Feb 11 20:27:50 2018 +0100
-Switched to branch 'master'
-Your branch is up-to-date with 'origin/master'.
+Date:   Wed Apr 11 09:21:53 2018 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit d3d6938ff653f9582b408ed9c0a5cc96776d29de
-Merge: 7b11de3 901819a
+commit a8ff465d79ed00b6569de3f4a1507b36730bb47c
+Merge: 99be8b1 d116cfe
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Size: counted 1000000 of 1105736 words (nodes).
+Size: counted 1000000 of 1106290 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
@@ -19,23 +15,28 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 695032 out of 1105736 total words have one or more features.
+Features: 691404 out of 1106290 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 32 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
-Udapi: found 92588 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 1105736 words.
+Udapi: found 99152 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106290 words.
 Genres: found 3 out of 14 known.
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
+*** PASSED ***
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
+*** PASSED ***
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train.conllu
+*** PASSED ***
+Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
 (weight=0.0769230769230769) * (score{genres}=0.214285714285714) = 0.0164835164835165
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.162657270813286) = 0.0500483910194727
+(weight=0.307692307692308) * (score{udapi}=0.103743141490929) = 0.0319209666125936
 (weight=0.0769230769230769) * (score{udeprels}=0.691891891891892) = 0.0532224532224532
-(TOTAL score=0.612062053033135) * (availability=1) * (validity=1) = 0.612062053033135
+(TOTAL score=0.593934628626256) * (availability=1) * (validity=1) = 0.593934628626256
 STARS = 3
-UD_Russian-SynTagRus	0.612062053033135	3
-Switched to branch 'dev'
-Your branch is up-to-date with 'origin/dev'.
+UD_Russian-SynTagRus	0.593934628626256	3
