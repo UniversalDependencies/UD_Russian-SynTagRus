@@ -5,13 +5,13 @@
        fused is the number of tokens that are split to two or more syntactic words
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
-    <total><sentences>61889</sentences><tokens>1107735</tokens><words>1107735</words><fused>0</fused></total>
+    <total><sentences>61889</sentences><tokens>1106290</tokens><words>1106290</words><fused>0</fused></total>
   </size>
   <lemmas unique="44246" /><!-- ,, ., в, и, ", -, на, не, быть, что, с, он, по, а, это -->
   <forms unique="115334" /><!-- ,, ., в, и, ", -, на, не, что, с, по, а, как, это, к -->
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
-  <tags unique="18">
+  <tags unique="17">
     <tag name="ADJ">108802</tag><!-- другой, новый, самый, первый, сам, должен, российский, большой, нужный, последний -->
     <tag name="ADP">104065</tag><!-- в, на, с, по, к, из, о, для, от, за -->
     <tag name="ADV">56114</tag><!-- так, уже, еще, можно, более, как, очень, однако, где, сейчас -->
@@ -29,7 +29,6 @@
     <tag name="SYM">1041</tag><!-- %, $, №, °, €, +, =, №№, C, ? -->
     <tag name="VERB">123718</tag><!-- мочь, быть, стать, говорить, делать, сказать, иметь, считать, идти, получить -->
     <tag name="X">535</tag><!-- of, and, the, in, for, de, mignews.com, capture, di, money -->
-    <tag name="_">1445</tag><!-- _ -->
   </tags>
   <!-- Statistics of features and values. The comments show the most frequent word forms. -->
   <feats unique="39">
@@ -74,8 +73,7 @@
     <feat name="Voice" value="Pass" upos="VERB">15210</feat><!-- считается, говорится, связано, используется, используются, связаны, сделано, принято, связанных, связана -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="41">
-    <dep name="_">1445</dep>
+  <deps unique="40">
     <dep name="acl">11573</dep>
     <dep name="acl:relcl">6986</dep>
     <dep name="advcl">11188</dep>
