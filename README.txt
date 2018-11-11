@@ -34,8 +34,13 @@ For more details, see the recently published paper (in Russian):
 
 
 #Changelog
+*2018-11-15 v2.3
+  * Rules for punctuation fixed
+  * True case lammes for PROPN
+  * advmod/discource distinction
+  * aux for бы (fixed some issues) 
 
-*2017-04-15 v2.2
+*2018-04-15 v2.2
   * Rules for punctuation implemented
   * Rules for reported speech implemented
   * Passives fixed
