@@ -8,12 +8,12 @@ The SynTagRus dependency treebank is being developed by the Computational
 Linguistics Laboratory, A.A.Kharkevich Institute of Information Transmission
 Problems, Russian Academy of Sciences, located in Moscow.
 
-Currently the treebank contains  over 1,000,000 tokens (over 66,000 sentences)
+Currently the treebank contains over 1,000,000 tokens (over 66,000 sentences)
 belonging to texts from a variety of genres (contemporary fiction, popular
 science, newspaper and journal articles dated between 1960 and 2016, texts of
 online news etc.)
 
-The treebank is so far the only human-corrected corpus of Russian supplied
+SynTagRus is a human-corrected corpus of Russian supplied
 with comprehensive morphological annotation and syntactic annotation in the
 form of a complete dependency tree provided for every sentence. Additionally,
 the original version of SynTagRus contains other types of annotation, first of
@@ -32,8 +32,19 @@ For more details, see the recently published paper (in Russian):
 «Национальный корпус русского языка: 10 лет проекту». Труды Института русского
 языка им. В.В. Виноградова. М., 2015. Вып. 6. С. 272-299.
 
+## References
+
+* Droganova, K., Lyashevskaya, O., & Zeman, D. (2018). 
+Data Conversion and Consistency of Monolingual Corpora: Russian UD Treebanks. 
+In Proceedings of the 17th International Workshop on Treebanks and Linguistic Theories (TLT 2018), 
+December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping University Electronic Press.
+
 
 #Changelog
+*2019-05-15 v2.4
+  * enhanced representation fixed ('бы')
+  * AUX for aux 'бы'
+
 *2018-11-15 v2.3
   * Rules for punctuation fixed
   * True case lammes for PROPN
