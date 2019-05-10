@@ -5,9 +5,12 @@
        fused is the number of tokens that are split to two or more syntactic words
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
-    <total><sentences>61889</sentences><tokens>1106290</tokens><words>1106290</words><fused>0</fused></total>
+    <total><sentences>61889</sentences><tokens>1106296</tokens><words>1106296</words><fused>0</fused></total>
+    <train><sentences>48814</sentences><tokens>870479</tokens><words>870479</words><fused>0</fused></train>
+    <dev><sentences>6584</sentences><tokens>118488</tokens><words>118488</words><fused>0</fused></dev>
+    <test><sentences>6491</sentences><tokens>117329</tokens><words>117329</words><fused>0</fused></test>
   </size>
-  <lemmas unique="44302" /><!-- ,, ., в, и, ", -, на, не, быть, что, с, он, по, а, это -->
+  <lemmas unique="44300" /><!-- ,, ., в, и, ", -, на, не, быть, что, с, он, по, а, это -->
   <forms unique="115334" /><!-- ,, ., в, и, ", -, на, не, что, с, по, а, как, это, к -->
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
@@ -15,16 +18,16 @@
     <tag name="ADJ">107800</tag><!-- другой, новый, самый, первый, сам, должен, российский, большой, нужный, последний -->
     <tag name="ADP">104064</tag><!-- в, на, с, по, к, из, о, для, от, за -->
     <tag name="ADV">56113</tag><!-- так, уже, еще, можно, более, как, очень, однако, где, сейчас -->
-    <tag name="AUX">8145</tag><!-- быть -->
+    <tag name="AUX">9669</tag><!-- быть, бы -->
     <tag name="CCONJ">38998</tag><!-- и, а, но, или, ни, да, либо, причем, зато, только -->
     <tag name="DET">27808</tag><!-- этот, свой, весь, тот, такой, наш, его, их, каждый, какой -->
     <tag name="INTJ">100</tag><!-- ах, о, ох, а, эх, та-да-дам, ой, ай, алло, ба -->
     <tag name="NOUN">271122</tag><!-- год, человек, время, страна, дело, работа, система, жизнь, власть, вопрос -->
     <tag name="NUM">18266</tag><!-- один, два, много, несколько, три, 1, 10, 20, 2, пять -->
-    <tag name="PART">35375</tag><!-- не, и, же, только, бы, даже, вот, ли, лишь, именно -->
+    <tag name="PART">33851</tag><!-- не, и, же, только, даже, вот, ли, лишь, именно, просто -->
     <tag name="PRON">49058</tag><!-- он, это, который, они, то, я, мы, она, что, все -->
     <tag name="PROPN">41593</tag><!-- Россия, Москва, США, Путин, Владимир, СССР, Европа, Сергей, Александр, Земля -->
-    <tag name="PUNCT">202063</tag><!-- ,, ., ", -, :, ), (, ?, !, … -->
+    <tag name="PUNCT">202069</tag><!-- ,, ., ", -, :, ), (, ?, !, … -->
     <tag name="SCONJ">20525</tag><!-- что, как, если, чтобы, когда, то, чем, хотя, поскольку, пока -->
     <tag name="SYM">1037</tag><!-- %, $, №, °, €, +, =, №№, ? -->
     <tag name="VERB">123712</tag><!-- мочь, быть, стать, говорить, делать, сказать, иметь, считать, идти, получить -->
@@ -51,7 +54,7 @@
     <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">149665</feat><!-- России, она, была, ее, этой, жизни, власти, страны, своей, эта -->
     <feat name="Gender" value="Masc" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">208592</feat><!-- он, был, его, года, лет, году, этот, один, раз, ему -->
     <feat name="Gender" value="Neut" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">103515</feat><!-- это, было, то, время, все, том, того, этом, тем, этого -->
-    <feat name="Mood" value="Cnd" upos="PART,SCONJ">2950</feat><!-- бы, чтобы, чтоб, б -->
+    <feat name="Mood" value="Cnd" upos="PART,SCONJ">1427</feat><!-- чтобы, чтоб, бы -->
     <feat name="Mood" value="Imp" upos="AUX,VERB">1037</feat><!-- см., давайте, будь, представьте, давай, дай, извините, иди, смотри, Вспомните -->
     <feat name="Mood" value="Ind" upos="AUX,VERB">84629</feat><!-- было, был, есть, может, будет, были, была, нет, могут, будут -->
     <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB">170688</feat><!-- мы, они, их, все, были, лет, них, нас, эти, всех -->
@@ -79,19 +82,19 @@
     <dep name="advcl">11188</dep>
     <dep name="advmod">66923</dep>
     <dep name="amod">89732</dep>
-    <dep name="appos">8843</dep>
+    <dep name="appos">8834</dep>
     <dep name="aux">2446</dep>
     <dep name="aux:pass">2693</dep>
     <dep name="case">102072</dep>
     <dep name="cc">39368</dep>
     <dep name="ccomp">5820</dep>
     <dep name="compound">1092</dep>
-    <dep name="conj">51729</dep>
+    <dep name="conj">51773</dep>
     <dep name="cop">5179</dep>
     <dep name="csubj">6106</dep>
     <dep name="csubj:pass">169</dep>
     <dep name="dep">1</dep>
-    <dep name="det">26099</dep>
+    <dep name="det">26108</dep>
     <dep name="discourse">1049</dep>
     <dep name="expl">52</dep>
     <dep name="fixed">9959</dep>
@@ -101,16 +104,16 @@
     <dep name="iobj">8191</dep>
     <dep name="mark">20610</dep>
     <dep name="nmod">95702</dep>
-    <dep name="nsubj">72305</dep>
+    <dep name="nsubj">72304</dep>
     <dep name="nsubj:pass">7612</dep>
     <dep name="nummod">12254</dep>
     <dep name="nummod:entity">63</dep>
     <dep name="nummod:gov">4608</dep>
-    <dep name="obj">33929</dep>
-    <dep name="obl">94583</dep>
-    <dep name="orphan">1178</dep>
+    <dep name="obj">33928</dep>
+    <dep name="obl">94585</dep>
+    <dep name="orphan">1134</dep>
     <dep name="parataxis">22730</dep>
-    <dep name="punct">202062</dep>
+    <dep name="punct">202068</dep>
     <dep name="root">61889</dep>
     <dep name="vocative">15</dep>
     <dep name="xcomp">10824</dep>
