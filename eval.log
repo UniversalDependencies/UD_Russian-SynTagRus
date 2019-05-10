@@ -3,10 +3,10 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit 5d7dafdab9d4897172e517f5d83162ef6a5ce8ce
-Merge: dc5bda4 bd65f45
+commit a4861d9e305228583697bb7caf9663ae0fd220e0
+Merge: 0acc6b8 de62ad5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Size: counted 1000000 of 1106290 words (nodes).
+Size: counted 1000000 of 1106296 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
@@ -15,12 +15,12 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 689657 out of 1106290 total words have one or more features.
+Features: 688134 out of 1106296 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 32 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
-Udapi: found 97310 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106290 words.
+Udapi: found 97117 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106296 words.
 Genres: found 3 out of 17 known.
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
 *** PASSED ***
@@ -35,8 +35,8 @@ Validity: 1
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.120393386905784) = 0.0370441190479336
+(weight=0.307692307692308) * (score{udapi}=0.122142717681344) = 0.0375823746711827
 (weight=0.0769230769230769) * (score{udeprels}=0.691891891891892) = 0.0532224532224532
-(TOTAL score=0.596148925211563) * (availability=1) * (validity=1) = 0.596148925211563
+(TOTAL score=0.596687180834812) * (availability=1) * (validity=1) = 0.596687180834812
 STARS = 3
-UD_Russian-SynTagRus	0.596148925211563	3
+UD_Russian-SynTagRus	0.596687180834812	3
