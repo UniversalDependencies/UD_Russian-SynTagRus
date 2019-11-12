@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit a4861d9e305228583697bb7caf9663ae0fd220e0
-Merge: 0acc6b8 de62ad5
+commit cf650e7f57a9fda93f5d4ab215529f1af7adf31b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Fri May 10 21:41:05 2019 +0200
 Size: counted 1000000 of 1106296 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -23,12 +23,48 @@ Udapi: found 97117 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106296 words.
 Genres: found 3 out of 17 known.
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
-*** PASSED ***
+[Line 794 Sent 2013Algoritm.xml_34 Node 10]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADJ'
+[Line 1537 Sent 2013Algoritm.xml_67 Node 4]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [7]
+[Line 2165 Sent 2013Algoritm.xml_87 Node 11]: [L3 Syntax leaf-cc] 'cc' not expected to have children (11:но:cc --> 12:и:advmod)
+[Line 5728 Sent 2011Alpinizm.xml_90 Node 27]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 6604 Sent 2011Alpinizm.xml_126 Node 13]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 6745 Sent 2011Alpinizm.xml_134 Node 15]: [L3 Syntax orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'appos'.
+[Line 8734 Sent 2011Alpinizm.xml_224 Node 10]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [13]
+[Line 8734 Sent 2011Alpinizm.xml_224 Node 10]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [13]
+[Line 9216 Sent 2011Alpinizm.xml_248 Node 6]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+...suppressing further errors regarding Syntax
+Syntax errors: 228
+*** FAILED *** with 228 errors
+Exit code: 1
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
-*** PASSED ***
+[Line 648 Sent 2003Armeniya.xml_30 Node 8]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [11]
+[Line 952 Sent 2003Armeniya.xml_45 Node 16]: [L3 Syntax leaf-cc] 'cc' not expected to have children (16:но:cc --> 17:и:advmod)
+[Line 1779 Sent 2003Armeniya.xml_85 Node 15]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 3566 Sent 2003Artist_mimansa.xml_12 Node 9]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
+[Line 5428 Sent 2003Artist_mimansa.xml_101 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
+[Line 5432 Sent 2003Artist_mimansa.xml_101 Node 10]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
+[Line 5830 Sent 2003Artist_mimansa.xml_127 Node 2]: [L3 Syntax rel-upos-aux] 'aux' should be 'AUX' but it is 'PART'
+[Line 6129 Sent 2003Artist_mimansa.xml_141 Node 1]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 6419 Sent 2003Artist_mimansa.xml_155 Node 7]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+...suppressing further errors regarding Syntax
+Syntax errors: 247
+*** FAILED *** with 247 errors
+Exit code: 1
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train.conllu
-*** PASSED ***
-Validity: 1
+[Line 3477 Sent 2003Anketa.xml_239 Node 9]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 3955 Sent 2003Anketa.xml_270 Node 13]: [L3 Syntax rel-upos-aux] 'aux' should be 'AUX' but it is 'PART'
+[Line 4692 Sent 2003Anketa.xml_318 Node 6]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [8]
+[Line 4692 Sent 2003Anketa.xml_318 Node 6]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [8]
+[Line 5301 Sent 2003Ataka.xml_24 Node 21]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
+[Line 5381 Sent 2003Ataka.xml_27 Node 12]: [L3 Syntax leaf-cc] 'cc' not expected to have children (12:но:cc --> 13:и:advmod)
+[Line 5429 Sent 2003Ataka.xml_29 Node 14]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 5495 Sent 2003Ataka.xml_32 Node 11]: [L3 Syntax leaf-cc] 'cc' not expected to have children (11:но:cc --> 12:и:advmod)
+[Line 5547 Sent 2003Ataka.xml_35 Node 12]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
+...suppressing further errors regarding Syntax
+Syntax errors: 1724
+*** FAILED *** with 1724 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
 (weight=0.0769230769230769) * (score{genres}=0.176470588235294) = 0.0135746606334842
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
@@ -37,6 +73,6 @@ Validity: 1
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
 (weight=0.307692307692308) * (score{udapi}=0.122142717681344) = 0.0375823746711827
 (weight=0.0769230769230769) * (score{udeprels}=0.691891891891892) = 0.0532224532224532
-(TOTAL score=0.596687180834812) * (availability=1) * (validity=1) = 0.596687180834812
-STARS = 3
-UD_Russian-SynTagRus	0.596687180834812	3
+(TOTAL score=0.596687180834812) * (availability=1) * (validity=0.01) = 0.00596687180834812
+STARS = 0
+UD_Russian-SynTagRus	0.00596687180834812	0
