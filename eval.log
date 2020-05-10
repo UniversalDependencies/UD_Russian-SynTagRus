@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit cf650e7f57a9fda93f5d4ab215529f1af7adf31b
+commit a55dd7c60d24aef76cb3a4021cbe3dacc376a44e
+Merge: 64c25fb 2acdbf5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 10 21:41:05 2019 +0200
 Size: counted 1000000 of 1106296 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -19,7 +19,7 @@ Features: 688134 out of 1106296 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 32 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
-Udapi: found 97117 bugs.
+Udapi: found 97405 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106296 words.
 Genres: found 3 out of 17 known.
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
@@ -71,8 +71,8 @@ Validity: 0.01
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.122142717681344) = 0.0375823746711827
+(weight=0.307692307692308) * (score{udapi}=0.119539436100284) = 0.0367813649539336
 (weight=0.0769230769230769) * (score{udeprels}=0.691891891891892) = 0.0532224532224532
-(TOTAL score=0.596687180834812) * (availability=1) * (validity=0.01) = 0.00596687180834812
+(TOTAL score=0.595886171117563) * (availability=1) * (validity=0.01) = 0.00595886171117563
 STARS = 0
-UD_Russian-SynTagRus	0.00596687180834812	0
+UD_Russian-SynTagRus	0.00595886171117563	0
