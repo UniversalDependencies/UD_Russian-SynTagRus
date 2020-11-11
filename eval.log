@@ -3,9 +3,9 @@ commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Date:   Sat Apr 21 19:02:58 2018 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit a55dd7c60d24aef76cb3a4021cbe3dacc376a44e
-Merge: 64c25fb 2acdbf5
+commit 0fed4f9ae6f10b2f823d47a4fa077967f2b6b28e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Sun May 10 18:40:39 2020 +0200
 Size: counted 1000000 of 1106296 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -29,12 +29,12 @@ validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conl
 [Line 5728 Sent 2011Alpinizm.xml_90 Node 27]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 [Line 6604 Sent 2011Alpinizm.xml_126 Node 13]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 [Line 6745 Sent 2011Alpinizm.xml_134 Node 15]: [L3 Syntax orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'appos'.
-[Line 8734 Sent 2011Alpinizm.xml_224 Node 10]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [13]
 [Line 8734 Sent 2011Alpinizm.xml_224 Node 10]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [13]
 [Line 9216 Sent 2011Alpinizm.xml_248 Node 6]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
+[Line 9256 Sent 2011Alpinizm.xml_250 Node 9]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 ...suppressing further errors regarding Syntax
-Syntax errors: 228
-*** FAILED *** with 228 errors
+Syntax errors: 224
+*** FAILED *** with 224 errors
 Exit code: 1
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
 [Line 648 Sent 2003Armeniya.xml_30 Node 8]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [11]
@@ -47,22 +47,22 @@ validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.con
 [Line 6129 Sent 2003Artist_mimansa.xml_141 Node 1]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 [Line 6419 Sent 2003Artist_mimansa.xml_155 Node 7]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 ...suppressing further errors regarding Syntax
-Syntax errors: 247
-*** FAILED *** with 247 errors
+Syntax errors: 244
+*** FAILED *** with 244 errors
 Exit code: 1
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train.conllu
 [Line 3477 Sent 2003Anketa.xml_239 Node 9]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 [Line 3955 Sent 2003Anketa.xml_270 Node 13]: [L3 Syntax rel-upos-aux] 'aux' should be 'AUX' but it is 'PART'
-[Line 4692 Sent 2003Anketa.xml_318 Node 6]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [8]
 [Line 4692 Sent 2003Anketa.xml_318 Node 6]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [8]
 [Line 5301 Sent 2003Ataka.xml_24 Node 21]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
 [Line 5381 Sent 2003Ataka.xml_27 Node 12]: [L3 Syntax leaf-cc] 'cc' not expected to have children (12:но:cc --> 13:и:advmod)
 [Line 5429 Sent 2003Ataka.xml_29 Node 14]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
 [Line 5495 Sent 2003Ataka.xml_32 Node 11]: [L3 Syntax leaf-cc] 'cc' not expected to have children (11:но:cc --> 12:и:advmod)
 [Line 5547 Sent 2003Ataka.xml_35 Node 12]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
+[Line 5813 Sent 2003Ataka.xml_48 Node 11]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
 ...suppressing further errors regarding Syntax
-Syntax errors: 1724
-*** FAILED *** with 1724 errors
+Syntax errors: 1686
+*** FAILED *** with 1686 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
