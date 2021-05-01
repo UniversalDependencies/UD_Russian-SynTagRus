@@ -48,7 +48,7 @@
     <feat name="Case" value="Par" upos="NOUN">104</feat><!-- разу, виду, народу, толку, чаю, ходу, голоду, сахару, дому, глазу -->
     <feat name="Case" value="Voc" upos="NOUN,PROPN">16</feat><!-- господи, боже, Володь, Серег, дедуль -->
     <feat name="Degree" value="Cmp" upos="ADJ,ADV">4682</feat><!-- более, больше, менее, лучше, раньше, выше, дальше, чаще, позже, хуже -->
-    <feat name="Degree" value="Pos" upos="ADJ,ADV,DET,NOUN,PROPN">159064</feat><!-- так, уже, еще, можно, как, очень, однако, где, сейчас, например -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV">158415</feat><!-- так, уже, еще, можно, как, очень, однако, где, сейчас, например -->
     <feat name="Degree" value="Sup" upos="ADJ">505</feat><!-- важнейших, крупнейших, важнейшим, крупнейшие, новейшие, ближайших, важнейший, крупнейшей, важнейшая, важнейшие -->
     <feat name="Foreign" value="Yes" upos="ADJ,PROPN,X">2806</feat><!-- MBA, FIA, the, of, ButtKicker, and, PM, RoboCup, FOXP2, Weta -->
     <feat name="Gender" value="Fem" upos="ADJ,AUX,DET,NOUN,NUM,PRON,PROPN,VERB">149665</feat><!-- России, она, была, ее, этой, жизни, власти, страны, своей, эта -->
