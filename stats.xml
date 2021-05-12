@@ -82,11 +82,11 @@
     <dep name="advcl">11188</dep>
     <dep name="advmod">66923</dep>
     <dep name="amod">89732</dep>
-    <dep name="appos">8834</dep>
+    <dep name="appos">8833</dep>
     <dep name="aux">2446</dep>
     <dep name="aux:pass">2693</dep>
     <dep name="case">102072</dep>
-    <dep name="cc">39368</dep>
+    <dep name="cc">39369</dep>
     <dep name="ccomp">5820</dep>
     <dep name="compound">1092</dep>
     <dep name="conj">51772</dep>
