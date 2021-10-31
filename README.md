@@ -40,37 +40,41 @@ In Proceedings of the 17th International Workshop on Treebanks and Linguistic Th
 December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping University Electronic Press.
 
 
-#Changelog
-*2019-05-15 v2.4
+# Changelog
+
+* 2021-11-15 v2.9
+  * Fixed remaining legacy validation errors.
+
+* 2019-05-15 v2.4
   * enhanced representation fixed ('бы')
   * AUX for aux 'бы'
 
-*2018-11-15 v2.3
+* 2018-11-15 v2.3
   * Rules for punctuation fixed
   * True case lammes for PROPN
   * advmod/discource distinction
   * aux for бы (fixed some issues) 
 
-*2018-04-15 v2.2
+* 2018-04-15 v2.2
   * Rules for punctuation implemented
   * Rules for reported speech implemented
   * Passives fixed
   * PROPN distinguishing from NOUN improved
   * MWE fixed (underscored lemmas)
 
-*2017-11-15 v2.1
+* 2017-11-15 v2.1
   * Conversion rules for syntax completely rewritten
   * PROPN distinguishing from NOUN improved
   * csubj added
   * Elliptic constructions fixed
   * MWE fixed
 
-*2017-03-15 v2.0
+* 2017-03-15 v2.0
   * Converted to UD v2 guidelines.
   * Elliptic constructions added.
   * Compounds added.
 
-*2016-11-15 v1.4
+* 2016-11-15 v1.4
   * Fixed peculiar Latin/Cyrillic encoding errors.
   * Lemmas are now lowercased as in other treebanks.
   * PROPN distinguished from NOUN, using heuristics based on upper/lowercase.
