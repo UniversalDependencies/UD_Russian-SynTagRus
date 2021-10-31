@@ -44,6 +44,7 @@ December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping
 
 * 2021-11-15 v2.9
   * Fixed remaining legacy validation errors.
+  * Added enhanced relations other than gapping (gapping was already there).
 
 * 2019-05-15 v2.4
   * enhanced representation fixed ('бы')
