@@ -31,6 +31,9 @@ my %nword =
     'dev'   => 118488,
     'test'  => 117329
 );
+# Mark all sentences with the following comment so that the users can recognize
+# them once we merge them with the older data.
+my $mark_comment = "\# Added to SynTagRus 2015–2020.\n";
 while(<>)
 {
     # We assume that the sentence id line is the first line of each input
@@ -52,6 +55,7 @@ while(<>)
                 #$target = balance(\%nsent, $docid);
                 $target = balance(\%nword, $docid);
             }
+            push(@sentence, $mark_comment);
         }
         else
         {
