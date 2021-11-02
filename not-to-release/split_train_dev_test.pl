@@ -25,6 +25,12 @@ my %nsent =
     'dev'   =>  6584,
     'test'  =>  6491
 );
+my %nword =
+(
+    'train' => 870479,
+    'dev'   => 118488,
+    'test'  => 117329
+);
 while(<>)
 {
     # We assume that the sentence id line is the first line of each input
@@ -43,7 +49,8 @@ while(<>)
                 push(@sentence, "\# newdoc id = $docid\n");
                 $last_docid = $docid;
                 # Decide the target data part for this document.
-                $target = balance(\%nsent, $docid);
+                #$target = balance(\%nsent, $docid);
+                $target = balance(\%nword, $docid);
             }
         }
         else
@@ -69,6 +76,7 @@ while(<>)
             print TEST (join('', @sentence));
         }
         $nsent{$target}++;
+        $nword{$target} += scalar(grep {m/^\d+\t/} (@sentence));
         @sentence = ();
     }
 }
@@ -76,7 +84,8 @@ close(TRAIN);
 close(DEV);
 close(TEST);
 # Report the final balance.
-balance(\%nsent);
+#balance(\%nsent);
+balance(\%nword);
 
 
 
