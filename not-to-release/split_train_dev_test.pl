@@ -75,6 +75,8 @@ while(<>)
 close(TRAIN);
 close(DEV);
 close(TEST);
+# Report the final balance.
+balance(\%nsent);
 
 
 
@@ -109,6 +111,6 @@ sub balance
         $target = 'test';
     }
     my $decision = defined($docid) ? " => document $docid goes to $target" : '';
-    printf STDERR ("train %.1f dev %.1f test %.1f$decision\n", $trprc+0.05, $dvprc+0.05, $tsprc+0.05);
+    printf STDERR ("train %.1f (%d) dev %.1f (%d) test %.1f (%d)$decision\n", $trprc+0.05, $nsent{train}, $dvprc+0.05, $nsent{dev}, $tsprc+0.05, $nsent{test});
     return $target;
 }
