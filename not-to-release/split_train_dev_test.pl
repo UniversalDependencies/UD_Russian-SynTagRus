@@ -43,27 +43,7 @@ while(<>)
                 push(@sentence, "\# newdoc id = $docid\n");
                 $last_docid = $docid;
                 # Decide the target data part for this document.
-                my $nsent = $nsent{train} + $nsent{dev} + $nsent{test};
-                my $trprc = ($nsent{train} / $nsent * 100);
-                my $dvprc = ($nsent{dev} / $nsent * 100);
-                my $tsprc = ($nsent{test} / $nsent * 100);
-                my $trprcc = $trprc / 80;
-                my $dvprcc = $dvprc / 10;
-                my $tsprcc = $tsprc / 10;
-                # The part that has proportionally the biggest deficite will get the next document.
-                if($trprcc < $dvprcc && $trprcc < $tsprcc)
-                {
-                    $target = 'train';
-                }
-                elsif($dvprcc < $trprcc && $dvprcc < $tsprcc)
-                {
-                    $target = 'dev';
-                }
-                else
-                {
-                    $target = 'test';
-                }
-                printf STDERR ("train %.1f dev %.1f test %.1f => document $docid goes to $target\n", $trprc+0.05, $dvprc+0.05, $tsprc+0.05);
+                $target = balance(\%nsent, $docid);
             }
         }
         else
@@ -95,3 +75,40 @@ while(<>)
 close(TRAIN);
 close(DEV);
 close(TEST);
+
+
+
+#------------------------------------------------------------------------------
+# Considers the previously allocated data sizes and says where the next
+# document should go (without knowing how long the next document is).
+#------------------------------------------------------------------------------
+sub balance
+{
+    my $nsentref = shift;
+    my $docid = shift;
+    my %nsent = %{$nsentref};
+    my $nsent = $nsent{train} + $nsent{dev} + $nsent{test};
+    my $trprc = $nsent{train} / $nsent * 100;
+    my $dvprc = $nsent{dev} / $nsent * 100;
+    my $tsprc = $nsent{test} / $nsent * 100;
+    my $trprcc = $trprc / 80;
+    my $dvprcc = $dvprc / 10;
+    my $tsprcc = $tsprc / 10;
+    # The part that has proportionally the biggest deficite will get the next document.
+    my $target;
+    if($trprcc < $dvprcc && $trprcc < $tsprcc)
+    {
+        $target = 'train';
+    }
+    elsif($dvprcc < $trprcc && $dvprcc < $tsprcc)
+    {
+        $target = 'dev';
+    }
+    else
+    {
+        $target = 'test';
+    }
+    my $decision = defined($docid) ? " => document $docid goes to $target" : '';
+    printf STDERR ("train %.1f dev %.1f test %.1f$decision\n", $trprc+0.05, $dvprc+0.05, $tsprc+0.05);
+    return $target;
+}
