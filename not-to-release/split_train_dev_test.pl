@@ -44,15 +44,18 @@ while(<>)
                 $last_docid = $docid;
                 # Decide the target data part for this document.
                 my $nsent = $nsent{train} + $nsent{dev} + $nsent{test};
-                my $trprc = ($nsent{train} / $nsent * 100) / 80;
-                my $dvprc = ($nsent{dev} / $nsent * 100) / 10;
-                my $tsprc = ($nsent{test} / $nsent * 100) / 10;
+                my $trprc = ($nsent{train} / $nsent * 100);
+                my $dvprc = ($nsent{dev} / $nsent * 100);
+                my $tsprc = ($nsent{test} / $nsent * 100);
+                my $trprcc = $trprc / 80;
+                my $dvprcc = $dvprc / 10;
+                my $tsprcc = $tsprc / 10;
                 # The part that has proportionally the biggest deficite will get the next document.
-                if($trprc < $dvprc && $trprc < $tsprc)
+                if($trprcc < $dvprcc && $trprcc < $tsprcc)
                 {
                     $target = 'train';
                 }
-                elsif($dvprc < $trprc && $dvprc < $tsprc)
+                elsif($dvprcc < $trprcc && $dvprcc < $tsprcc)
                 {
                     $target = 'dev';
                 }
