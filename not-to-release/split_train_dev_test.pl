@@ -120,6 +120,6 @@ sub balance
         $target = 'test';
     }
     my $decision = defined($docid) ? " => document $docid goes to $target" : '';
-    printf STDERR ("train %.1f (%d) dev %.1f (%d) test %.1f (%d)$decision\n", $trprc+0.05, $nsent{train}, $dvprc+0.05, $nsent{dev}, $tsprc+0.05, $nsent{test});
+    printf STDERR ("train %.1f (%d) dev %.1f (%d) test %.1f (%d)$decision\n", $trprc, $nsent{train}, $dvprc, $nsent{dev}, $tsprc, $nsent{test});
     return $target;
 }
