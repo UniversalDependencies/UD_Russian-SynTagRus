@@ -2,6 +2,7 @@
 
 Russian data from the SynTagRus corpus.
 
+
 # Introduction
 
 The SynTagRus dependency treebank is being developed by the Computational
@@ -32,11 +33,36 @@ For more details, see the recently published paper (in Russian):
 «Национальный корпус русского языка: 10 лет проекту». Труды Института русского
 языка им. В.В. Виноградова. М., 2015. Вып. 6. С. 272-299.
 
+
+# New Data 2015–2020
+
+The UD releases of SynTagRus (1.3 to 2.8) differed in the gradually improved conversion
+of annotation but they shared the same body of underlying texts, which entered the
+source corpus before 2015. A new set of texts, annotated from 2015 to 2020 and manually
+checked by the RNC (Russian National Corpus) 2.0 disambiguation team, was converted to
+UD and added for release 2.9. It consists of
+
+* 25447 sentences
+* 409387 words
+* 756 empty nodes
+
+The new data has been distributed to train, development and test sets proportionally so
+that the result has approximately 80%:10%:10% of syntactic words. Whole documents are
+always kept in the same data part.
+
+The new data can be distinguished by sentence ids (starting with 2015, ..., 2020).
+In addition, every new sentence has the following sentence-level comment:
+
+* Added to SynTagRus 2015–2020.
+
+
+# Acknowledgements
+
 ## References
 
-* Droganova, K., Lyashevskaya, O., & Zeman, D. (2018). 
-Data Conversion and Consistency of Monolingual Corpora: Russian UD Treebanks. 
-In Proceedings of the 17th International Workshop on Treebanks and Linguistic Theories (TLT 2018), 
+* Droganova, K., Lyashevskaya, O., & Zeman, D. (2018).
+Data Conversion and Consistency of Monolingual Corpora: Russian UD Treebanks.
+In Proceedings of the 17th International Workshop on Treebanks and Linguistic Theories (TLT 2018),
 December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping University Electronic Press.
 
 
@@ -45,6 +71,7 @@ December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping
 * 2021-11-15 v2.9
   * Fixed remaining legacy validation errors.
   * Added enhanced relations other than gapping (gapping was already there).
+  * Added 409K words of data annotated between 2015 and 2020 (see above).
 
 * 2019-05-15 v2.4
   * enhanced representation fixed ('бы')
@@ -54,7 +81,7 @@ December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping
   * Rules for punctuation fixed
   * True case lammes for PROPN
   * advmod/discource distinction
-  * aux for бы (fixed some issues) 
+  * aux for бы (fixed some issues)
 
 * 2018-04-15 v2.2
   * Rules for punctuation implemented
