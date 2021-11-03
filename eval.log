@@ -1,12 +1,12 @@
 Running the following version of UD tools:
-commit ca3b862e9e2871c76cd91bf78ffb089c0c60184d
+commit 3478a99bb195eb8749c367af4f7b3fd357a12a4c
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Thu May 6 20:16:19 2021 +0200
+Date:   Tue Nov 2 22:17:19 2021 +0100
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit 4e55095e95ef193af973e4f9b8379f107b2196a6
-Merge: 03cb6ff 337bf7a
+commit 7afac6cb1290c435a97c91ca74a6443f125a01a0
+Merge: 6afe76a b7fe3d5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Size: counted 1000000 of 1106296 words (nodes).
+Size: counted 1000000 of 1515683 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
@@ -15,66 +15,34 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 688134 out of 1106296 total words have one or more features.
+Features: 959541 out of 1515683 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
-Universal relations: 32 out of 37 found in the corpus.
+Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL      96181
-Udapi: found 96181 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 1106296 words.
+               TOTAL      43290
+Udapi: found 43290 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 1515683 words.
 Genres: found 3 out of 17 known.
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
-[Line 794 Sent 2013Algoritm.xml_34 Node 10]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADJ'
-[Line 2165 Sent 2013Algoritm.xml_87 Node 11]: [L3 Syntax leaf-cc] 'cc' not expected to have children (11:но:cc --> 12:и:advmod)
-[Line 5728 Sent 2011Alpinizm.xml_90 Node 27]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 6604 Sent 2011Alpinizm.xml_126 Node 13]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 6745 Sent 2011Alpinizm.xml_134 Node 15]: [L3 Syntax orphan-parent] The parent of 'orphan' should normally be 'conj' but it is 'appos'.
-[Line 9216 Sent 2011Alpinizm.xml_248 Node 6]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 9256 Sent 2011Alpinizm.xml_250 Node 9]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 9772 Sent 2011Alpinizm.xml_278 Node 6]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 12412 Sent 2004Andrei_Ashkerov.xml_31 Node 12]: [L3 Syntax leaf-cc] 'cc' not expected to have children (12:да:cc --> 13:и:advmod)
-...suppressing further errors regarding Syntax
-Syntax errors: 168
-*** FAILED *** with 168 errors
-Exit code: 1
+*** PASSED ***
 validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
-[Line 952 Sent 2003Armeniya.xml_45 Node 16]: [L3 Syntax leaf-cc] 'cc' not expected to have children (16:но:cc --> 17:и:advmod)
-[Line 1779 Sent 2003Armeniya.xml_85 Node 15]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 3566 Sent 2003Artist_mimansa.xml_12 Node 9]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
-[Line 5428 Sent 2003Artist_mimansa.xml_101 Node 6]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
-[Line 5432 Sent 2003Artist_mimansa.xml_101 Node 10]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'NUM'
-[Line 5830 Sent 2003Artist_mimansa.xml_127 Node 2]: [L3 Syntax rel-upos-aux] 'aux' should be 'AUX' but it is 'PART'
-[Line 6129 Sent 2003Artist_mimansa.xml_141 Node 1]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 6419 Sent 2003Artist_mimansa.xml_155 Node 7]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 6482 Sent 2003Artist_mimansa.xml_157 Node 2]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-...suppressing further errors regarding Syntax
-Syntax errors: 186
-*** FAILED *** with 186 errors
-Exit code: 1
-validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train.conllu
-[Line 3477 Sent 2003Anketa.xml_239 Node 9]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 3955 Sent 2003Anketa.xml_270 Node 13]: [L3 Syntax rel-upos-aux] 'aux' should be 'AUX' but it is 'PART'
-[Line 5301 Sent 2003Ataka.xml_24 Node 21]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
-[Line 5381 Sent 2003Ataka.xml_27 Node 12]: [L3 Syntax leaf-cc] 'cc' not expected to have children (12:но:cc --> 13:и:advmod)
-[Line 5429 Sent 2003Ataka.xml_29 Node 14]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'ADV'
-[Line 5495 Sent 2003Ataka.xml_32 Node 11]: [L3 Syntax leaf-cc] 'cc' not expected to have children (11:но:cc --> 12:и:advmod)
-[Line 5547 Sent 2003Ataka.xml_35 Node 12]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
-[Line 5813 Sent 2003Ataka.xml_48 Node 11]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
-[Line 10001 Sent 2003Baklanov.xml_299 Node 29]: [L3 Syntax leaf-aux-cop] 'cop' not expected to have children (29:это:cop --> 28:все:det)
-...suppressing further errors regarding Syntax
-Syntax errors: 1219
-*** FAILED *** with 1219 errors
-Exit code: 1
-Validity: 0.01
+*** PASSED ***
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-a.conllu
+*** PASSED ***
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-b.conllu
+*** PASSED ***
+validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-c.conllu
+*** PASSED ***
+Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
 (weight=0.0769230769230769) * (score{genres}=0.176470588235294) = 0.0135746606334842
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.130603382819788) = 0.0401856562522424
-(weight=0.0769230769230769) * (score{udeprels}=0.691891891891892) = 0.0532224532224532
-(TOTAL score=0.599290462415872) * (availability=1) * (validity=0.01) = 0.00599290462415872
-STARS = 0
-UD_Russian-SynTagRus	0.00599290462415872	0
+(weight=0.307692307692308) * (score{udapi}=0.714386187613109) = 0.219811134650187
+(weight=0.0769230769230769) * (score{udeprels}=0.735135135135135) = 0.0565488565488566
+(TOTAL score=0.78224234414022) * (availability=1) * (validity=1) = 0.78224234414022
+STARS = 4
+UD_Russian-SynTagRus	0.78224234414022	4
