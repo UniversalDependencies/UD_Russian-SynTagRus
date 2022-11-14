@@ -87,7 +87,7 @@
     <feat name="Voice" value="Pass" upos="VERB">19342</feat><!-- считается, говорится, связано, используется, написано, связаны, сделано, сказано, принято, связанных -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="44">
+  <deps unique="45">
     <dep name="acl">15954</dep>
     <dep name="acl:relcl">9601</dep>
     <dep name="advcl">15713</dep>
@@ -100,37 +100,38 @@
     <dep name="cc">56357</dep>
     <dep name="ccomp">8393</dep>
     <dep name="compound">1691</dep>
-    <dep name="conj">72413</dep>
+    <dep name="conj">72414</dep>
     <dep name="cop">7089</dep>
     <dep name="csubj">8177</dep>
     <dep name="csubj:pass">217</dep>
     <dep name="dep">5</dep>
     <dep name="det">37923</dep>
     <dep name="discourse">1222</dep>
-    <dep name="dislocated">11</dep>
+    <dep name="dislocated">12</dep>
     <dep name="expl">1008</dep>
     <dep name="fixed">13931</dep>
     <dep name="flat">1277</dep>
-    <dep name="flat:foreign">2450</dep>
+    <dep name="flat:foreign">2447</dep>
     <dep name="flat:name">7735</dep>
     <dep name="iobj">13223</dep>
     <dep name="list">12</dep>
     <dep name="mark">26687</dep>
     <dep name="nmod">123652</dep>
-    <dep name="nsubj">102243</dep>
+    <dep name="nsubj">102234</dep>
+    <dep name="nsubj:outer">8</dep>
     <dep name="nsubj:pass">9504</dep>
     <dep name="nummod">10045</dep>
     <dep name="nummod:entity">368</dep>
     <dep name="nummod:gov">3573</dep>
     <dep name="obj">49527</dep>
-    <dep name="obl">121804</dep>
+    <dep name="obl">121802</dep>
     <dep name="obl:agent">613</dep>
     <dep name="obl:tmod">838</dep>
     <dep name="orphan">1456</dep>
-    <dep name="parataxis">31249</dep>
+    <dep name="parataxis">31252</dep>
     <dep name="punct">280723</dep>
     <dep name="root">87336</dep>
     <dep name="vocative">213</dep>
-    <dep name="xcomp">16329</dep>
+    <dep name="xcomp">16330</dep>
   </deps>
 </treebank>
