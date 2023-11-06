@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 04abe686385f14a9a6f68784bd723a6b60ded594
+commit e9726a6a7d6913193d90edb45a4cb549235c5b16
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 9 00:14:39 2023 +0200
+Date:   Sat Nov 4 17:10:55 2023 +0100
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit d89d292b7eeadcfe56b7b80aa6f01db5b791238c
+commit f0d8d10b445dafc90f48f5a2f010f930a1cce6a3
+Merge: 5ea1936 3f74841
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 14 12:29:06 2022 +0100
 Size: counted 1000000 of 1515683 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -15,24 +15,79 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 959640 out of 1515683 total words have one or more features.
+Features: 959641 out of 1515683 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL      43424
-Udapi: found 43424 bugs.
+               TOTAL      43417
+Udapi: found 43417 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 1515683 words.
 Genres: found 3 out of 17 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
+[Line 20563 Sent uppsalaBitov_1.xml_23 Node 14]: [L3 Warning fixed-gap] Gaps in fixed expression [14, 16] 'хотел * ехал'
+[Line 39722 Sent 2007Chelovek_na_tribune.xml_121 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 9] 'более * * * * * * разъяснил'
+[Line 109267 Sent uppsalaKorp_240.xml_131 Node 7]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 10] 'ставят * * ног'
+[Line 146374 Sent 2018Puteshestvie_v_Armeniyu.xml_33 Node 16]: [L3 Warning fixed-gap] Gaps in fixed expression [16, 18] 'друг * другу'
+[Line 146778 Sent 2018Puteshestvie_v_Armeniyu.xml_52 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 3] 'Один * другим'
+[Line 163892 Sent 2020_Corpus2_0Khochu_byt_negrom.xml_53 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 4] 'мало * где'
+[Line 165139 Sent 2020_Corpus2_0Khochu_byt_negrom.xml_131 Node 30]: [L3 Warning fixed-gap] Gaps in fixed expression [30, 32] 'один * другим'
+[Line 173137 Sent 2020_Corpus2_0Parallelnyi_mir.xml_179 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 4] 'мало * кто'
+[Line 175690 Sent 2020_RFFIInstrument_yazyka_1.xml_96 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'один * другой'
+...suppressing further errors regarding Warning
+Warnings: 11
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
+[Line 5415 Sent 2003Artist_mimansa.xml_100 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 5] 'Равны * * равны'
+[Line 8667 Sent 2003Artist_mimansa.xml_255 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 5] 'Иметь * * имеют'
+[Line 18556 Sent 2007Bezrybie.xml_106 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 6] 'более * * * политик'
+[Line 24443 Sent 2014Bogi_menyayutsya.xml_176 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 15] 'более * * * * * * * * * * * * нашел'
+[Line 85053 Sent 2003I_evro_takoi_molodoi.xml_83 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 10] 'и * * * * * * * переведены'
+[Line 114212 Sent 2009Kukla_Gitlera.xml_37 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 4] 'что * день'
+[Line 117945 Sent 2011Lekarstva_ot_ustalosti.xml_46 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Возбуждать * * возбуждает'
+[Line 118067 Sent 2011Lekarstva_ot_ustalosti.xml_54 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 5] 'устал * * устал'
+[Line 128471 Sent 2003Lyubit_drakona.xml_175 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 10] 'более * * * * * * * объяснила'
+...suppressing further errors regarding Warning
+Warnings: 20
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-a.conllu
+[Line 22039 Sent 2003Dvoe_v_dekabre.xml_87 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Говорить * * говорили'
+[Line 37973 Sent 2003Metis.xml_92 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 8] 'более * * * * * существует'
+[Line 50311 Sent 2003Okhota.xml_50 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Договориться * * договорились'
+[Line 53110 Sent 2003Optimizm.xml_36 Node 22]: [L3 Warning fixed-gap] Gaps in fixed expression [22, 29] 'так * * * * * * предрасположении'
+[Line 67088 Sent 2003Pravilo_75.xml_77 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 6] 'Съесть * * * съест'
+[Line 67900 Sent 2003Prilet_ptits.xml_22 Node 60]: [L3 Warning fixed-gap] Gaps in fixed expression [60, 62] 'мало * что'
+[Line 75368 Sent 2003Propoved_na_zadannuyu_temu.xml_83 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 14] 'более * * * * * * * * * * * остается'
+[Line 124021 Sent 2003Zhivotnye_mukhi.xml_21 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Туда * * дорога'
+[Line 132329 Sent 2004Tarifnaya_viselitsa.xml_29 Node 12]: [L3 Warning fixed-gap] Gaps in fixed expression [12, 14] 'ни * чем'
+...suppressing further errors regarding Warning
+Warnings: 25
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-b.conllu
+[Line 8808 Sent 2009Zhdet_li_nas_golod.xml_20 Node 8]: [L3 Warning fixed-gap] Gaps in fixed expression [8, 10] 'советские * прилавки'
+[Line 28547 Sent 2010Lyzhi.xml_30 Node 20]: [L3 Warning fixed-gap] Gaps in fixed expression [20, 22] 'какое * возможно'
+[Line 29510 Sent 2010Mars_3.xml_9 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'знать * знали'
+[Line 29514 Sent 2010Mars_3.xml_9 Node 7]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 9] 'ведать * ведали'
+[Line 36163 Sent 2010Mozgi_naprokat.xml_113 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 5] 'твори * * хочу'
+[Line 73611 Sent 2011Grisha_Perelman_devyatyi_genii.xml_98 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 8] 'более * * * * * известно'
+[Line 136134 Sent 2012Kak_zakupat_dorogostoyashchee_oborudovanie.xml_17 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 7] 'более * * * * требует'
+[Line 183746 Sent 2013Budushchee_Medvedeva.xml_85 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 6] 'более * * * включаются'
+[Line 213619 Sent 2013Podarok_dlya_vsekh.xml_52 Node 2]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 10] 'более * * * * * * * выступает'
+...suppressing further errors regarding Warning
+Warnings: 25
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-c.conllu
+[Line 6130 Sent 2015Blokadnoe_detstvo.xml_342 Node 4]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'неизвестно * чего'
+[Line 10288 Sent 2015Blokadnoe_detstvo.xml_577 Node 34]: [L3 Warning fixed-gap] Gaps in fixed expression [34, 36] 'одно * другому'
+[Line 18422 Sent 2015Grekhi_ukrainskie.xml_41 Node 13]: [L3 Warning fixed-gap] Gaps in fixed expression [13, 15] 'один * другим'
+[Line 23178 Sent 2015Interviyu_Dvorkina.xml_58 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * другу'
+[Line 34325 Sent 2015Kriptografiya.xml_48 Node 25]: [L3 Warning fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
+[Line 47597 Sent 2015Pervyi_avtomobil.xml_28 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 3] 'Мало * что'
+[Line 55391 Sent 2015Poroshenko_dolzhen_pobedit.xml_307 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * друга'
+[Line 55574 Sent 2015Poroshenko_dolzhen_pobedit.xml_317 Node 4]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'друг * друга'
+[Line 82946 Sent 2016Migranty_ekspaty_kosmopolity.xml_5 Node 7]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 9] 'друг * другом'
+...suppressing further errors regarding Warning
+Warnings: 74
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
@@ -41,8 +96,8 @@ Validity: 1
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.713502097734157) = 0.219539106995125
+(weight=0.307692307692308) * (score{udapi}=0.713548281533804) = 0.219553317395016
 (weight=0.0769230769230769) * (score{udeprels}=0.735135135135135) = 0.0565488565488566
-(TOTAL score=0.781970316485158) * (availability=1) * (validity=1) = 0.781970316485158
+(TOTAL score=0.781984526885049) * (availability=1) * (validity=1) = 0.781984526885049
 STARS = 4
-UD_Russian-SynTagRus	0.781970316485158	4
+UD_Russian-SynTagRus	0.781984526885049	4
