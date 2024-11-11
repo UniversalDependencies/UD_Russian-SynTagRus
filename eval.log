@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
+commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 09:21:16 2024 +0200
+Date:   Sun Nov 10 10:33:45 2024 +0100
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit 896b2ab82201c2681f87c791eac3645bc01e8b70
-Merge: 03c7946 a9ce924
+commit 5678654e146044956f9489592dc70c68c487cfb5
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Sun May 5 13:26:15 2024 +0200
 Size: counted 1000000 of 1515683 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -36,7 +36,7 @@ Genres: found 3 out of 17 known.
 [Line 1117 Sent 2013Algoritm.xml_47 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1117 Sent 2013Algoritm.xml_47 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 ...suppressing further errors regarding Warning
-Warnings: 623
+Warnings: 730
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
 [Line 529 Sent 2003Armeniya.xml_24 Node 11]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
@@ -50,49 +50,49 @@ Warnings: 623
 [Line 534 Sent 2003Armeniya.xml_24 Node 16]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 ...suppressing further errors regarding Warning
-Warnings: 451
+Warnings: 553
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-a.conllu
-[Line 17172 Sent 2003Bionika.xml_40 Node 5]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17171 Sent 2003Bionika.xml_40 Node 4]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17196 Sent 2003Bionika.xml_42 Node 5]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17194 Sent 2003Bionika.xml_42 Node 3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17197 Sent 2003Bionika.xml_42 Node 6]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17194 Sent 2003Bionika.xml_42 Node 3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17205 Sent 2003Bionika.xml_42 Node 14]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17204 Sent 2003Bionika.xml_42 Node 13]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17278 Sent 2003Bionika.xml_44 Node 28]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 17277 Sent 2003Bionika.xml_44 Node 27]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 60 Sent 2003Anketa.xml_3 Node 19]: [L3 Warning leaf-det] 'det' not expected to have children (19:такими:det --> 16:кое-кто:nsubj)
+[Line 67 Sent 2003Anketa.xml_3 Node 19]: [L3 Warning leaf-det] 'det' not expected to have children (19:такими:det --> 23:можно:acl)
+[Line 804 Sent 2003Anketa.xml_41 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:каждому:det --> 13:работает:acl)
+[Line 6201 Sent 2003Baklanov.xml_27 Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:той:det --> 6:самой:amod)
+[Line 7214 Sent 2003Baklanov.xml_90 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:тех:det --> 5:бежал:acl)
+[Line 7222 Sent 2003Baklanov.xml_90 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:тех:det --> 13:бежал:acl)
+[Line 9748 Sent 2003Baklanov.xml_282 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:тех:det --> 6:бежит:acl)
+[Line 10059 Sent 2003Baklanov.xml_301 Node 13]: [L3 Warning leaf-det] 'det' not expected to have children (13:тот:det --> 14:самый:amod)
+[Line 11941 Sent 2003Baklanov.xml_417 Node 14]: [L3 Warning leaf-det] 'det' not expected to have children (14:весь:det --> 16:снегу:nmod)
+[Line 12446 Sent 2003Baklanov.xml_449 Node 14]: [L3 Warning leaf-det] 'det' not expected to have children (14:тех:det --> 18:метался:acl)
 ...suppressing further errors regarding Warning
-Warnings: 1646
+Warnings: 1993
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-b.conllu
+[Line 1319 Sent 2009Vyzov_i_otvet.xml_30 Node 44]: [L3 Warning leaf-det] 'det' not expected to have children (44:какой:det --> 50:была:cop)
+[Line 1321 Sent 2009Vyzov_i_otvet.xml_30 Node 44]: [L3 Warning leaf-det] 'det' not expected to have children (44:какой:det --> 52:тюрьма:nsubj)
+[Line 1645 Sent 2009Vyzov_i_otvet.xml_49 Node 13]: [L3 Warning leaf-det] 'det' not expected to have children (13:те:det --> 16:есть:acl)
+[Line 2129 Sent 2009Vyzov_i_otvet.xml_80 Node 21]: [L3 Warning leaf-det] 'det' not expected to have children (21:этой:det --> 22:самой:amod)
+[Line 4653 Sent 2009Zanimatelnye_tsifry.xml_63 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:тем:det --> 10:нет:acl)
+[Line 5392 Sent 2009Zapretnoe_iskusstvo_2006.xml_14 Node 16]: [L3 Warning leaf-det] 'det' not expected to have children (16:том:det --> 18:самом:amod)
 [Line 8808 Sent 2009Zhdet_li_nas_golod.xml_20 Node 8]: [L3 Warning fixed-gap] Gaps in fixed expression [8, 10] 'советские * прилавки'
 [Line 11869 Sent 2010Chistka_v_sporte.xml_46 Node 13]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 11866 Sent 2010Chistka_v_sporte.xml_46 Node 10]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 12137 Sent 2010Chistka_v_sporte.xml_58 Node 7]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12136 Sent 2010Chistka_v_sporte.xml_58 Node 6]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12702 Sent 2010Ekonomisty.xml_25 Node 4]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12701 Sent 2010Ekonomisty.xml_25 Node 3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12703 Sent 2010Ekonomisty.xml_25 Node 5]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12701 Sent 2010Ekonomisty.xml_25 Node 3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12915 Sent 2010Ekonomisty.xml_33 Node 4]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 ...suppressing further errors regarding Warning
-Warnings: 1415
+Warnings: 1761
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-c.conllu
+[Line 1932 Sent 2015Blokadnoe_detstvo.xml_102 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:нашей:det --> 12:мамой:nmod)
 [Line 6130 Sent 2015Blokadnoe_detstvo.xml_342 Node 4]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'неизвестно * чего'
+[Line 6289 Sent 2015Blokadnoe_detstvo.xml_350 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:такой:det --> 7:выглядело:ccomp)
+[Line 6851 Sent 2015Blokadnoe_detstvo.xml_383 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:нашей:det --> 8:мамой:nmod)
 [Line 10288 Sent 2015Blokadnoe_detstvo.xml_577 Node 34]: [L3 Warning fixed-gap] Gaps in fixed expression [34, 36] 'одно * другому'
+[Line 11021 Sent 2015Donbass.xml_23 Node 12]: [L3 Warning leaf-det] 'det' not expected to have children (12:иными:det --> 18:территории:advcl)
 [Line 18422 Sent 2015Grekhi_ukrainskie.xml_41 Node 13]: [L3 Warning fixed-gap] Gaps in fixed expression [13, 15] 'один * другим'
+[Line 22339 Sent 2015Interviyu_Dvorkina.xml_18 Node 18]: [L3 Warning leaf-det] 'det' not expected to have children (18:таких:det --> 22:начинать:advcl)
 [Line 23178 Sent 2015Interviyu_Dvorkina.xml_58 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * другу'
-[Line 34325 Sent 2015Kriptografiya.xml_48 Node 25]: [L3 Warning fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
-[Line 45695 Sent 2015Opravdanie_televideniya.xml_149 Node 8]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 47597 Sent 2015Pervyi_avtomobil.xml_28 Node 1]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 3] 'Мало * что'
-[Line 55391 Sent 2015Poroshenko_dolzhen_pobedit.xml_307 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * друга'
-[Line 55574 Sent 2015Poroshenko_dolzhen_pobedit.xml_317 Node 4]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'друг * друга'
-[Line 82946 Sent 2016Migranty_ekspaty_kosmopolity.xml_5 Node 7]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 9] 'друг * другом'
+[Line 28169 Sent 2015Interviyu_Yavlinskogo.xml_83 Node 7]: [L3 Warning leaf-det] 'det' not expected to have children (7:такой:det --> 12:было:ccomp)
 ...suppressing further errors regarding Warning
-Warnings: 97
+Warnings: 187
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
