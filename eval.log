@@ -1,12 +1,12 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit 5678654e146044956f9489592dc70c68c487cfb5
+commit 70bb49346e30877457671ec6197d3d271001a538
+Merge: 41aa54d 5385948
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 13:26:15 2024 +0200
-Size: counted 1000000 of 1515683 words (nodes).
+Size: counted 1000000 of 1515580 words (nodes).
 Size: min(0, log((N/1000)**2)) = 13.8155105579643.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
@@ -15,94 +15,94 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 959641 out of 1515683 total words have one or more features.
+Features: 970953 out of 1515580 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL      43372
-Udapi: found 43372 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 1515683 words.
-Genres: found 3 out of 17 known.
+               TOTAL        718
+Udapi: found 718 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 1515580 words.
+Genres: found 3 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
 [Line 914 Sent 2013Algoritm.xml_38 Node 30]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 914 Sent 2013Algoritm.xml_38 Node 30]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 986 Sent 2013Algoritm.xml_41 Node 13]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 985 Sent 2013Algoritm.xml_41 Node 12]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 985 Sent 2013Algoritm.xml_41 Node 12]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 985 Sent 2013Algoritm.xml_41 Node 12]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 989 Sent 2013Algoritm.xml_41 Node 16]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 985 Sent 2013Algoritm.xml_41 Node 12]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1117 Sent 2013Algoritm.xml_47 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 1117 Sent 2013Algoritm.xml_47 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1117 Sent 2013Algoritm.xml_47 Node 2]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1266 Sent 2013Algoritm.xml_54 Node 7]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 ...suppressing further errors regarding Warning
-Warnings: 730
+Warnings: 1048
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
-[Line 529 Sent 2003Armeniya.xml_24 Node 11]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 530 Sent 2003Armeniya.xml_24 Node 12]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 532 Sent 2003Armeniya.xml_24 Node 14]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 534 Sent 2003Armeniya.xml_24 Node 16]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 [Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 523 Sent 2003Armeniya.xml_24 Node 5]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 545 Sent 2003Armeniya.xml_25 Node 4]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 545 Sent 2003Armeniya.xml_25 Node 4]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 545 Sent 2003Armeniya.xml_25 Node 4]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
 ...suppressing further errors regarding Warning
-Warnings: 553
+Warnings: 475
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-a.conllu
-[Line 60 Sent 2003Anketa.xml_3 Node 19]: [L3 Warning leaf-det] 'det' not expected to have children (19:такими:det --> 16:кое-кто:nsubj)
-[Line 67 Sent 2003Anketa.xml_3 Node 19]: [L3 Warning leaf-det] 'det' not expected to have children (19:такими:det --> 23:можно:acl)
-[Line 804 Sent 2003Anketa.xml_41 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:каждому:det --> 13:работает:acl)
-[Line 6201 Sent 2003Baklanov.xml_27 Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:той:det --> 6:самой:amod)
-[Line 7214 Sent 2003Baklanov.xml_90 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:тех:det --> 5:бежал:acl)
-[Line 7222 Sent 2003Baklanov.xml_90 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:тех:det --> 13:бежал:acl)
-[Line 9748 Sent 2003Baklanov.xml_282 Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:тех:det --> 6:бежит:acl)
-[Line 10059 Sent 2003Baklanov.xml_301 Node 13]: [L3 Warning leaf-det] 'det' not expected to have children (13:тот:det --> 14:самый:amod)
-[Line 11941 Sent 2003Baklanov.xml_417 Node 14]: [L3 Warning leaf-det] 'det' not expected to have children (14:весь:det --> 16:снегу:nmod)
-[Line 12446 Sent 2003Baklanov.xml_449 Node 14]: [L3 Warning leaf-det] 'det' not expected to have children (14:тех:det --> 18:метался:acl)
+[Line 157 Sent 2003Anketa.xml_7 Node 25]: [L3 Warning fixed-without-extpos] Fixed expression 'так как' does not have the 'ExtPos' feature
+[Line 252 Sent 2003Anketa.xml_11 Node 28]: [L3 Warning fixed-without-extpos] Fixed expression 'так чтобы' does not have the 'ExtPos' feature
+[Line 352 Sent 2003Anketa.xml_17 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 518 Sent 2003Anketa.xml_27 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'как будто' does not have the 'ExtPos' feature
+[Line 739 Sent 2003Anketa.xml_39 Node 23]: [L3 Warning fixed-without-extpos] Fixed expression 'более чем' does not have the 'ExtPos' feature
+[Line 3847 Sent 2003Anketa.xml_265 Node 18]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 4860 Sent 2003Ataka.xml_4 Node 15]: [L3 Warning fixed-without-extpos] Fixed expression 'так и' does not have the 'ExtPos' feature
+[Line 5259 Sent 2003Ataka.xml_22 Node 18]: [L3 Warning fixed-without-extpos] Fixed expression 'т. д' does not have the 'ExtPos' feature
+[Line 5654 Sent 2003Ataka.xml_40 Node 11]: [L3 Warning fixed-without-extpos] Fixed expression 'так и' does not have the 'ExtPos' feature
+[Line 6271 Sent 2003Baklanov.xml_30 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 1993
+Warnings: 1473
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-b.conllu
-[Line 1319 Sent 2009Vyzov_i_otvet.xml_30 Node 44]: [L3 Warning leaf-det] 'det' not expected to have children (44:какой:det --> 50:была:cop)
-[Line 1321 Sent 2009Vyzov_i_otvet.xml_30 Node 44]: [L3 Warning leaf-det] 'det' not expected to have children (44:какой:det --> 52:тюрьма:nsubj)
-[Line 1645 Sent 2009Vyzov_i_otvet.xml_49 Node 13]: [L3 Warning leaf-det] 'det' not expected to have children (13:те:det --> 16:есть:acl)
-[Line 2129 Sent 2009Vyzov_i_otvet.xml_80 Node 21]: [L3 Warning leaf-det] 'det' not expected to have children (21:этой:det --> 22:самой:amod)
-[Line 4653 Sent 2009Zanimatelnye_tsifry.xml_63 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:тем:det --> 10:нет:acl)
-[Line 5392 Sent 2009Zapretnoe_iskusstvo_2006.xml_14 Node 16]: [L3 Warning leaf-det] 'det' not expected to have children (16:том:det --> 18:самом:amod)
-[Line 8808 Sent 2009Zhdet_li_nas_golod.xml_20 Node 8]: [L3 Warning fixed-gap] Gaps in fixed expression [8, 10] 'советские * прилавки'
-[Line 11869 Sent 2010Chistka_v_sporte.xml_46 Node 13]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 11866 Sent 2010Chistka_v_sporte.xml_46 Node 10]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12137 Sent 2010Chistka_v_sporte.xml_58 Node 7]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 452 Sent 2009Vysshaya_Shkola_Ekonomiki.xml_19 Node 14]: [L3 Warning fixed-without-extpos] Fixed expression 'так как' does not have the 'ExtPos' feature
+[Line 1576 Sent 2009Vyzov_i_otvet.xml_46 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Оттого что' does not have the 'ExtPos' feature
+[Line 2070 Sent 2009Vyzov_i_otvet.xml_78 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Так что' does not have the 'ExtPos' feature
+[Line 3663 Sent 2009Za_pravoe_delo.xml_35 Node 26]: [L3 Warning fixed-without-extpos] Fixed expression 'несмотря на' does not have the 'ExtPos' feature
+[Line 4617 Sent 2009Zanimatelnye_tsifry.xml_61 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'сколько заблагорассудится' does not have the 'ExtPos' feature
+[Line 5046 Sent 2009Zanimatelnye_tsifry.xml_87 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Так что' does not have the 'ExtPos' feature
+[Line 6489 Sent 2009Zapretnoe_iskusstvo_2006.xml_50 Node 43]: [L3 Warning fixed-without-extpos] Fixed expression 'так и' does not have the 'ExtPos' feature
+[Line 6570 Sent 2009Zapretnoe_iskusstvo_2006.xml_54 Node 15]: [L3 Warning fixed-without-extpos] Fixed expression 'представляет собой' does not have the 'ExtPos' feature
+[Line 6628 Sent 2009Zapretnoe_iskusstvo_2006.xml_56 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 7028 Sent 2009Zapretnoe_iskusstvo_2006.xml_72 Node 11]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 1761
+Warnings: 1415
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-c.conllu
-[Line 1932 Sent 2015Blokadnoe_detstvo.xml_102 Node 10]: [L3 Warning leaf-det] 'det' not expected to have children (10:нашей:det --> 12:мамой:nmod)
-[Line 6130 Sent 2015Blokadnoe_detstvo.xml_342 Node 4]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'неизвестно * чего'
-[Line 6289 Sent 2015Blokadnoe_detstvo.xml_350 Node 2]: [L3 Warning leaf-det] 'det' not expected to have children (2:такой:det --> 7:выглядело:ccomp)
-[Line 6851 Sent 2015Blokadnoe_detstvo.xml_383 Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:нашей:det --> 8:мамой:nmod)
-[Line 10288 Sent 2015Blokadnoe_detstvo.xml_577 Node 34]: [L3 Warning fixed-gap] Gaps in fixed expression [34, 36] 'одно * другому'
-[Line 11021 Sent 2015Donbass.xml_23 Node 12]: [L3 Warning leaf-det] 'det' not expected to have children (12:иными:det --> 18:территории:advcl)
-[Line 18422 Sent 2015Grekhi_ukrainskie.xml_41 Node 13]: [L3 Warning fixed-gap] Gaps in fixed expression [13, 15] 'один * другим'
-[Line 22339 Sent 2015Interviyu_Dvorkina.xml_18 Node 18]: [L3 Warning leaf-det] 'det' not expected to have children (18:таких:det --> 22:начинать:advcl)
-[Line 23178 Sent 2015Interviyu_Dvorkina.xml_58 Node 3]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * другу'
-[Line 28169 Sent 2015Interviyu_Yavlinskogo.xml_83 Node 7]: [L3 Warning leaf-det] 'det' not expected to have children (7:такой:det --> 12:было:ccomp)
+[Line 427 Sent 2015Blokadnoe_detstvo.xml_20 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'так что' does not have the 'ExtPos' feature
+[Line 805 Sent 2015Blokadnoe_detstvo.xml_41 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 4020 Sent 2015Blokadnoe_detstvo.xml_220 Node 8]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 4160 Sent 2015Blokadnoe_detstvo.xml_228 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'так и' does not have the 'ExtPos' feature
+[Line 4558 Sent 2015Blokadnoe_detstvo.xml_252 Node 25]: [L3 Warning fixed-without-extpos] Fixed expression 'так и' does not have the 'ExtPos' feature
+[Line 5323 Sent 2015Blokadnoe_detstvo.xml_296 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'так что' does not have the 'ExtPos' feature
+[Line 5550 Sent 2015Blokadnoe_detstvo.xml_310 Node 9]: [L3 Warning fixed-without-extpos] Fixed expression 'потому что' does not have the 'ExtPos' feature
+[Line 8698 Sent 2015Blokadnoe_detstvo.xml_489 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'меньше чем' does not have the 'ExtPos' feature
+[Line 9009 Sent 2015Blokadnoe_detstvo.xml_507 Node 21]: [L3 Warning fixed-without-extpos] Fixed expression 'так что' does not have the 'ExtPos' feature
+[Line 10049 Sent 2015Blokadnoe_detstvo.xml_565 Node 17]: [L3 Warning fixed-without-extpos] Fixed expression 'так что' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 187
+Warnings: 611
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.176470588235294) = 0.0135746606334842
+(weight=0.0769230769230769) * (score{genres}=0.166666666666667) = 0.0128205128205128
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=1) = 0.256410256410256
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
-(weight=0.307692307692308) * (score{udapi}=0.713845177388676) = 0.219644669965746
+(weight=0.307692307692308) * (score{udapi}=0.995262539753758) = 0.306234627616541
 (weight=0.0769230769230769) * (score{udeprels}=0.735135135135135) = 0.0565488565488566
-(TOTAL score=0.782075879455779) * (availability=1) * (validity=1) = 0.782075879455779
-STARS = 4
-UD_Russian-SynTagRus	0.782075879455779	4
+(TOTAL score=0.867911689293603) * (availability=1) * (validity=1) = 0.867911689293603
+STARS = 4.5
+UD_Russian-SynTagRus	0.867911689293603	4.5
