@@ -113,6 +113,7 @@ December 13–14, 2018, Oslo University, Norway (No. 155, pp. 52-65). Linköping
 Data available since: UD v1.3
 License: CC BY-NC-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: news nonfiction fiction
 Lemmas: converted from manual
 UPOS: converted from manual
