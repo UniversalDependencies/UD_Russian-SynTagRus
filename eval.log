@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Russian-SynTagRus:
-commit dd418990d6cb8cb2f525422847857c4302d89c10
-Merge: 1944d13 6377522
+commit 23ce42547142e6fe821feff88a1f78126ee3f35d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 20:41:55 2025 +0100
 CoNLL-U data file regular expression = '(?:(ru_syntagrus)-ud-train-[abc]\.conllu|(.+)-ud-(dev|test)\.conllu)'
 Language-treebank code (from CoNLL-U file name) = 'ru_syntagrus'
 Language code (from CoNLL-U file name) = 'ru'
@@ -25,76 +25,172 @@ Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Genres: found 3 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-dev.conllu
-[Line 1006 Sent 2013Algoritm.xml_42]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1006 Sent 2013Algoritm.xml_42]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1006 Sent 2013Algoritm.xml_42]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1006 Sent 2013Algoritm.xml_42]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 12180 Sent 2004Andrei_Ashkerov.xml_25]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 13784 Sent 2003Atlanty_i_atlantologi.xml_37]: [L3 Warning fixed-gap] Gaps in fixed expression [9, 11] 'друг * другом'
-[Line 20266 Sent uppsalaBitov_1.xml_11]: [L3 Warning obl-should-be-nmod] The parent (node [14] 'кому') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 21628 Sent uppsalaBitov_1.xml_59]: [L3 Warning obl-should-be-nmod] The parent (node [23] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 25565 Sent uppsalaBitov_1.xml_193]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 9] 'друг * друге'
-[Line 29319 Sent uppsalaBitov_2.xml_69]: [L3 Warning obl-should-be-nmod] The parent (node [22] 'кем') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 42
-*** PASSED ***
+[Line 1006 Sent 2013Algoritm.xml_42]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1006 Sent 2013Algoritm.xml_42]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1006 Sent 2013Algoritm.xml_42]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1006 Sent 2013Algoritm.xml_42]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 12180 Sent 2004Andrei_Ashkerov.xml_25]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 13784 Sent 2003Atlanty_i_atlantologi.xml_37]: [L3 WARNING fixed-gap] Gaps in fixed expression [9, 11] 'друг * другом'
+[Line 20266 Sent uppsalaBitov_1.xml_11]: [L3 SYNTAX obl-should-be-nmod] The parent (node [14] 'кому') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 21628 Sent uppsalaBitov_1.xml_59]: [L3 SYNTAX obl-should-be-nmod] The parent (node [23] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 25565 Sent uppsalaBitov_1.xml_193]: [L3 WARNING fixed-gap] Gaps in fixed expression [7, 9] 'друг * друге'
+[Line 29319 Sent uppsalaBitov_2.xml_69]: [L3 SYNTAX obl-should-be-nmod] The parent (node [22] 'кем') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 30975 Sent uppsalaBitov_2.xml_127]: [L3 SYNTAX obl-should-be-nmod] The parent (node [29] 'пирога') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 33237 Sent uppsalaBitov_2.xml_211]: [L3 WARNING fixed-gap] Gaps in fixed expression [42, 44] 'друг * другу'
+[Line 35290 Sent 2007Buran.xml_62]: [L3 WARNING fixed-gap] Gaps in fixed expression [3, 5] 'друг * друга'
+[Line 41742 Sent 2007Chuvstvo_spravedlivosti.xml_83]: [L3 SYNTAX obl-should-be-nmod] The parent (node [24] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 41848 Sent 2013Davaite_zhit_smelo.xml_4]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'шаг') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 43329 Sent 2013Davaite_zhit_smelo.xml_77]: [L3 SYNTAX obl-should-be-nmod] The parent (node [18] 'чего') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 53078 Sent 2007Dvigatel.xml_15]: [L3 SYNTAX obl-should-be-nmod] The parent (node [11] 'дерева') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 54001 Sent 2007Dvigatel.xml_54]: [L3 WARNING fixed-gap] Gaps in fixed expression [16, 18] 'друг * друга'
+[Line 57170 Sent 2011Facebook.xml_39]: [L3 WARNING fixed-gap] Gaps in fixed expression [14, 16] 'друг * друга'
+[Line 59816 Sent 2003Faraony_sobstvennoi_personoi.xml_52]: [L3 SYNTAX obl-should-be-nmod] The parent (node [50] 'деталей') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 109258 Sent uppsalaKorp_240.xml_131]: [L3 WARNING fixed-gap] Gaps in fixed expression [7, 10] 'ставят * * ног'
+[Line 111406 Sent uppsalaKorp_264.xml_16]: [L3 WARNING fixed-gap] Gaps in fixed expression [30, 32] 'друг * другом'
+[Line 146363 Sent 2018Puteshestvie_v_Armeniyu.xml_33]: [L3 WARNING fixed-gap] Gaps in fixed expression [16, 18] 'друг * другу'
+[Line 146767 Sent 2018Puteshestvie_v_Armeniyu.xml_52]: [L3 WARNING fixed-gap] Gaps in fixed expression [1, 3] 'Один * другим'
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 18
+SYNTAX errors: 23
+*** FAILED *** with 23 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-test.conllu
-[Line 6874 Sent 2003Artist_mimansa.xml_171]: [L3 Warning fixed-gap] Gaps in fixed expression [19, 21] 'друг * друга'
-[Line 8308 Sent 2003Artist_mimansa.xml_235]: [L3 Warning fixed-gap] Gaps in fixed expression [43, 45] 'друг * друга'
-[Line 8667 Sent 2003Artist_mimansa.xml_255]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 5] 'Иметь * * имеют'
-[Line 10635 Sent 2003Artist_mimansa.xml_370]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'делом') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 23398 Sent 2014Bogi_menyayutsya.xml_125]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 34501 Sent 2014Chto_takoe_interesno.xml_53]: [L3 Warning fixed-gap] Gaps in fixed expression [23, 25] 'друг * другу'
-[Line 35783 Sent 2008Chto_v_imeni.xml_64]: [L3 Warning obl-should-be-nmod] The parent (node [13] 'кого') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 37044 Sent 2013Doktor_Z.xml_29]: [L3 Warning fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
-[Line 38653 Sent 2013Doktor_Z.xml_115]: [L3 Warning fixed-gap] Gaps in fixed expression [4, 6] 'один * другим'
-[Line 62929 Sent 2011Formula-1.xml_397]: [L3 Warning fixed-gap] Gaps in fixed expression [12, 14] 'один * другим'
-...suppressing further errors regarding Warning
-Warnings: 42
-*** PASSED ***
+[Line 6874 Sent 2003Artist_mimansa.xml_171]: [L3 WARNING fixed-gap] Gaps in fixed expression [19, 21] 'друг * друга'
+[Line 8308 Sent 2003Artist_mimansa.xml_235]: [L3 WARNING fixed-gap] Gaps in fixed expression [43, 45] 'друг * друга'
+[Line 8667 Sent 2003Artist_mimansa.xml_255]: [L3 WARNING fixed-gap] Gaps in fixed expression [2, 5] 'Иметь * * имеют'
+[Line 10635 Sent 2003Artist_mimansa.xml_370]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'делом') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 23398 Sent 2014Bogi_menyayutsya.xml_125]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 34501 Sent 2014Chto_takoe_interesno.xml_53]: [L3 WARNING fixed-gap] Gaps in fixed expression [23, 25] 'друг * другу'
+[Line 35783 Sent 2008Chto_v_imeni.xml_64]: [L3 SYNTAX obl-should-be-nmod] The parent (node [13] 'кого') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 37044 Sent 2013Doktor_Z.xml_29]: [L3 WARNING fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
+[Line 38653 Sent 2013Doktor_Z.xml_115]: [L3 WARNING fixed-gap] Gaps in fixed expression [4, 6] 'один * другим'
+[Line 62929 Sent 2011Formula-1.xml_397]: [L3 WARNING fixed-gap] Gaps in fixed expression [12, 14] 'один * другим'
+[Line 68448 Sent 2014Geroi.xml_5]: [L3 WARNING fixed-gap] Gaps in fixed expression [20, 22] 'друг * другом'
+[Line 69484 Sent 2014Geroi.xml_56]: [L3 SYNTAX obl-should-be-nmod] The parent (node [33] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 82518 Sent 2012Iz_pochtovykh_yashchikov.xml_54]: [L3 SYNTAX obl-should-be-nmod] The parent (node [9] 'кем') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 94765 Sent 2012Kolchak.xml_190]: [L3 WARNING fixed-gap] Gaps in fixed expression [27, 29] 'друг * другом'
+[Line 100680 Sent uppsalaKorp_601.xml_17]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'готовность') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 113021 Sent 2010Kovcheg_Zhana_Vanie.xml_101]: [L3 WARNING fixed-gap] Gaps in fixed expression [8, 10] 'друг * другом'
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 121553 Sent 2007Lesorub.xml_85]: [L3 SYNTAX obl-should-be-nmod] The parent (node [15] 'стволу') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 127474 Sent 2003Lyubit_drakona.xml_109]: [L3 SYNTAX obl-should-be-nmod] The parent (node [13] 'чему') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 127711 Sent 2003Lyubit_drakona.xml_124]: [L3 SYNTAX obl-should-be-nmod] The parent (node [8] 'чему') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 127722 Sent 2003Lyubit_drakona.xml_125]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 130538 Sent 2007Lyzhi.xml_76]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 143420 Sent 2018Kto_za_Trampa.xml_6]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 143419 Sent 2018Kto_za_Trampa.xml_6]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+Warnings: 23
+SYNTAX errors: 19
+*** FAILED *** with 19 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-a.conllu
-[Line 11935 Sent 2003Baklanov.xml_417]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'снегу') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 22033 Sent 2003Dvoe_v_dekabre.xml_87]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Говорить * * говорили'
-[Line 50305 Sent 2003Okhota.xml_50]: [L3 Warning fixed-gap] Gaps in fixed expression [1, 4] 'Договориться * * договорились'
-[Line 53102 Sent 2003Optimizm.xml_36]: [L3 Warning fixed-gap] Gaps in fixed expression [22, 26] 'так * * * и'
-[Line 57554 Sent 2003Perestanovka_mebeli.xml_77]: [L3 Warning fixed-gap] Gaps in fixed expression [20, 22] 'друг * друга'
-[Line 67080 Sent 2003Pravilo_75.xml_77]: [L3 Warning fixed-gap] Gaps in fixed expression [2, 6] 'Съесть * * * съест'
-[Line 67892 Sent 2003Prilet_ptits.xml_22]: [L3 Warning obl-should-be-nmod] The parent (node [62] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 68382 Sent 2003Prilet_ptits.xml_37]: [L3 Warning obl-should-be-nmod] The parent (node [24] 'друга') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 80410 Sent 2003Shok_bez_trepeta.xml_5]: [L3 Warning obl-should-be-nmod] The parent (node [11] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 82880 Sent 2003Shok_bez_trepeta.xml_130]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 90
-*** PASSED ***
+[Line 11935 Sent 2003Baklanov.xml_417]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'снегу') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 22033 Sent 2003Dvoe_v_dekabre.xml_87]: [L3 WARNING fixed-gap] Gaps in fixed expression [1, 4] 'Говорить * * говорили'
+[Line 50305 Sent 2003Okhota.xml_50]: [L3 WARNING fixed-gap] Gaps in fixed expression [1, 4] 'Договориться * * договорились'
+[Line 53102 Sent 2003Optimizm.xml_36]: [L3 WARNING fixed-gap] Gaps in fixed expression [22, 26] 'так * * * и'
+[Line 57554 Sent 2003Perestanovka_mebeli.xml_77]: [L3 WARNING fixed-gap] Gaps in fixed expression [20, 22] 'друг * друга'
+[Line 67080 Sent 2003Pravilo_75.xml_77]: [L3 WARNING fixed-gap] Gaps in fixed expression [2, 6] 'Съесть * * * съест'
+[Line 67892 Sent 2003Prilet_ptits.xml_22]: [L3 SYNTAX obl-should-be-nmod] The parent (node [62] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 68382 Sent 2003Prilet_ptits.xml_37]: [L3 SYNTAX obl-should-be-nmod] The parent (node [24] 'друга') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 80410 Sent 2003Shok_bez_trepeta.xml_5]: [L3 SYNTAX obl-should-be-nmod] The parent (node [11] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 82880 Sent 2003Shok_bez_trepeta.xml_130]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 91381 Sent 2003Somnambula_v_tumane.xml_363]: [L3 WARNING fixed-gap] Gaps in fixed expression [31, 33] 'друг * другу'
+[Line 102012 Sent 2003To_v_zhar_to_v_kholod.xml_100]: [L3 SYNTAX obl-should-be-nmod] The parent (node [3] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 103451 Sent 2003Tyurma_britanskoi_korony.xml_49]: [L3 SYNTAX obl-should-be-nmod] The parent (node [24] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 107764 Sent 2003Uroki_Nord-Osta.xml_25]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 118844 Sent 2003Vyzhivshii_kamikadze.xml_359]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 124019 Sent 2003Zhivotnye_mukhi.xml_22]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'кому') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 128462 Sent 2003Zhores.xml_238]: [L3 WARNING fixed-gap] Gaps in fixed expression [15, 17] 'друг * друга'
+[Line 128477 Sent 2003Zhores.xml_238]: [L3 WARNING fixed-gap] Gaps in fixed expression [30, 32] 'друг * друга'
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 154339 Sent 2005Mamleev_svadba.xml_96]: [L3 WARNING fixed-gap] Gaps in fixed expression [15, 17] 'того * гляди'
+[Line 166501 Sent 2005Shokovaya_terapiya.xml_14]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 166500 Sent 2005Shokovaya_terapiya.xml_14]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 169750 Sent 2005Stranitsy_voennoi_istorii.xml_7]: [L3 WARNING fixed-gap] Gaps in fixed expression [15, 17] 'одна * другую'
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 274918 Sent 2007Okhota.xml_49]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 383909 Sent 2009Gadzhety-neudachniki.xml_35]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 408744 Sent 2009Neudachnye_vremena.xml_4]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+Warnings: 41
+SYNTAX errors: 49
+*** FAILED *** with 49 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-b.conllu
-[Line 1444 Sent 2009Vyzov_i_otvet.xml_38]: [L3 Warning obl-should-be-nmod] The parent (node [9] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 15659 Sent 2010Filmy_Timura_Bekmambetova.xml_33]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 15659 Sent 2010Filmy_Timura_Bekmambetova.xml_33]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 15713 Sent 2010Filmy_Timura_Bekmambetova.xml_35]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 15713 Sent 2010Filmy_Timura_Bekmambetova.xml_35]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 28497 Sent 2010Lyzhi.xml_28]: [L3 Warning obl-should-be-nmod] The parent (node [9] 'кулуарах') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 28546 Sent 2010Lyzhi.xml_30]: [L3 Warning fixed-gap] Gaps in fixed expression [20, 22] 'какое * возможно'
-[Line 29509 Sent 2010Mars_3.xml_9]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'знать * знали'
-[Line 29513 Sent 2010Mars_3.xml_9]: [L3 Warning fixed-gap] Gaps in fixed expression [7, 9] 'ведать * ведали'
-[Line 31840 Sent 2010Mars_3.xml_125]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 115
-*** PASSED ***
+[Line 1444 Sent 2009Vyzov_i_otvet.xml_38]: [L3 SYNTAX obl-should-be-nmod] The parent (node [9] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 15659 Sent 2010Filmy_Timura_Bekmambetova.xml_33]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 15659 Sent 2010Filmy_Timura_Bekmambetova.xml_33]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 15713 Sent 2010Filmy_Timura_Bekmambetova.xml_35]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 15713 Sent 2010Filmy_Timura_Bekmambetova.xml_35]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 28497 Sent 2010Lyzhi.xml_28]: [L3 SYNTAX obl-should-be-nmod] The parent (node [9] 'кулуарах') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 28546 Sent 2010Lyzhi.xml_30]: [L3 WARNING fixed-gap] Gaps in fixed expression [20, 22] 'какое * возможно'
+[Line 29509 Sent 2010Mars_3.xml_9]: [L3 WARNING fixed-gap] Gaps in fixed expression [3, 5] 'знать * знали'
+[Line 29513 Sent 2010Mars_3.xml_9]: [L3 WARNING fixed-gap] Gaps in fixed expression [7, 9] 'ведать * ведали'
+[Line 31840 Sent 2010Mars_3.xml_125]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 33851 Sent 2010Mezhdunarodnaya_olimpiada.xml_16]: [L3 WARNING fixed-gap] Gaps in fixed expression [36, 38] 'друг * друга'
+[Line 34056 Sent 2010Mezhdunarodnaya_olimpiada.xml_26]: [L3 WARNING fixed-gap] Gaps in fixed expression [12, 14] 'друг * другом'
+[Line 36162 Sent 2010Mozgi_naprokat.xml_113]: [L3 WARNING fixed-gap] Gaps in fixed expression [2, 5] 'твори * * хочу'
+[Line 36614 Sent 2010Mozgi_naprokat.xml_139]: [L3 SYNTAX obl-should-be-nmod] The parent (node [29] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 41038 Sent 2010Peregrev_ekonomiki.xml_36]: [L3 SYNTAX obl-should-be-nmod] The parent (node [23] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 68129 Sent 2011Apraushev.xml_148]: [L3 WARNING fixed-gap] Gaps in fixed expression [4, 6] 'друг * другом'
+[Line 70972 Sent 2011Gde_zhe_Shliman.xml_31]: [L3 WARNING fixed-gap] Gaps in fixed expression [11, 13] 'друг * другом'
+[Line 76982 Sent 2011Mariam_Petrosyan.xml_84]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 79335 Sent 2011Mariam_Petrosyan.xml_220]: [L3 SYNTAX obl-should-be-nmod] The parent (node [7] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 87661 Sent 2011Petrushka.xml_3]: [L3 SYNTAX obl-should-be-nmod] The parent (node [41] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 89922 Sent 2011Petrushka.xml_94]: [L3 WARNING fixed-gap] Gaps in fixed expression [27, 29] 'один * другим'
+[Line 90349 Sent 2011Petrushka.xml_115]: [L3 WARNING fixed-gap] Gaps in fixed expression [28, 30] 'одна * другой'
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 98361 Sent 2011Pochemu_my_ne_s_nimi.xml_42]: [L3 SYNTAX obl-should-be-nmod] The parent (node [19] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 112214 Sent 2011Sverkhkorotkoe_vremya.xml_20]: [L3 SYNTAX obl-should-be-nmod] The parent (node [9] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 112907 Sent 2011Sverkhkorotkoe_vremya.xml_49]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 121105 Sent 2011Sverkhkorotkoe_vremya.xml_409]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 165004 Sent 2012Putin_vzyal_kurs_na_agressivnoe_uderzhanie_status-kvo.xml_206]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 219240 Sent 2013Poslednii_dovod_issledovatelya.xml_160]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 219310 Sent 2013Poslednii_dovod_issledovatelya.xml_162]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 219431 Sent 2013Poslednii_dovod_issledovatelya.xml_168]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 73
+SYNTAX errors: 42
+*** FAILED *** with 42 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang ru --max-err=10 UD_Russian-SynTagRus/ru_syntagrus-ud-train-c.conllu
-[Line 6130 Sent 2015Blokadnoe_detstvo.xml_342]: [L3 Warning obl-should-be-nmod] The parent (node [6] 'чего') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 6430 Sent 2015Blokadnoe_detstvo.xml_359]: [L3 Warning obl-should-be-nmod] The parent (node [25] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 7353 Sent 2015Blokadnoe_detstvo.xml_409]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 16988 Sent 2015Glavnaya_taina_nachala_voiny.xml_256]: [L3 Warning obl-should-be-nmod] The parent (node [21] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 23177 Sent 2015Interviyu_Dvorkina.xml_58]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * другу'
-[Line 34324 Sent 2015Kriptografiya.xml_48]: [L3 Warning fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
-[Line 44017 Sent 2015Opravdanie_televideniya.xml_83]: [L3 Warning obl-should-be-nmod] The parent (node [8] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 52181 Sent 2015Poroshenko_dolzhen_pobedit.xml_131]: [L3 Warning obl-should-be-nmod] The parent (node [12] 'нас') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 54095 Sent 2015Poroshenko_dolzhen_pobedit.xml_237]: [L3 Warning obl-should-be-nmod] The parent (node [11] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 55387 Sent 2015Poroshenko_dolzhen_pobedit.xml_307]: [L3 Warning fixed-gap] Gaps in fixed expression [3, 5] 'друг * друга'
-...suppressing further errors regarding Warning
-Warnings: 111
-*** PASSED ***
-Validity: 1
+[Line 6130 Sent 2015Blokadnoe_detstvo.xml_342]: [L3 SYNTAX obl-should-be-nmod] The parent (node [6] 'чего') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 6430 Sent 2015Blokadnoe_detstvo.xml_359]: [L3 SYNTAX obl-should-be-nmod] The parent (node [25] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 7353 Sent 2015Blokadnoe_detstvo.xml_409]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 16988 Sent 2015Glavnaya_taina_nachala_voiny.xml_256]: [L3 SYNTAX obl-should-be-nmod] The parent (node [21] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 23177 Sent 2015Interviyu_Dvorkina.xml_58]: [L3 WARNING fixed-gap] Gaps in fixed expression [3, 5] 'друг * другу'
+[Line 34324 Sent 2015Kriptografiya.xml_48]: [L3 WARNING fixed-gap] Gaps in fixed expression [25, 27] 'друг * друга'
+[Line 44017 Sent 2015Opravdanie_televideniya.xml_83]: [L3 SYNTAX obl-should-be-nmod] The parent (node [8] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 52181 Sent 2015Poroshenko_dolzhen_pobedit.xml_131]: [L3 SYNTAX obl-should-be-nmod] The parent (node [12] 'нас') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 54095 Sent 2015Poroshenko_dolzhen_pobedit.xml_237]: [L3 SYNTAX obl-should-be-nmod] The parent (node [11] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 55387 Sent 2015Poroshenko_dolzhen_pobedit.xml_307]: [L3 WARNING fixed-gap] Gaps in fixed expression [3, 5] 'друг * друга'
+[Line 55570 Sent 2015Poroshenko_dolzhen_pobedit.xml_317]: [L3 WARNING fixed-gap] Gaps in fixed expression [4, 6] 'друг * друга'
+[Line 56129 Sent 2015Poroshenko_dolzhen_pobedit.xml_349]: [L3 SYNTAX obl-should-be-nmod] The parent (node [5] 'кто') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 58359 Sent 2015Pust_dolgim_budet_razgovor.xml_26]: [L3 SYNTAX obl-should-be-nmod] The parent (node [1] 'Я') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 63493 Sent 2015Razvorot_nad_Atlantidoi.xml_113]: [L3 SYNTAX obl-should-be-nmod] The parent (node [10] 'что') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 82940 Sent 2016Migranty_ekspaty_kosmopolity.xml_5]: [L3 WARNING fixed-gap] Gaps in fixed expression [7, 9] 'друг * другом'
+[Line 83795 Sent 2016Migranty_ekspaty_kosmopolity.xml_28]: [L3 WARNING fixed-gap] Gaps in fixed expression [8, 10] 'что * за'
+[Line 90135 Sent 2016Slovo_ne_to_chem_kazhetsya.xml_99]: [L3 WARNING fixed-gap] Gaps in fixed expression [12, 14] 'как * так'
+[Line 93126 Sent 2016Slovo_ne_to_chem_kazhetsya.xml_299]: [L3 WARNING fixed-gap] Gaps in fixed expression [5, 7] 'друг * друга'
+[Line 101978 Sent 2017Apresyan_1.xml_136]: [L3 WARNING fixed-gap] Gaps in fixed expression [10, 12] 'друг * другом'
+[Line 102006 Sent 2017Apresyan_1.xml_137]: [L3 WARNING fixed-gap] Gaps in fixed expression [8, 10] 'друг * другом'
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 130710 Sent 2018Byt_li_nam_vmeste.xml_63]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 130710 Sent 2018Byt_li_nam_vmeste.xml_63]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 134994 Sent 2018Dissidenty.xml_116]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 134993 Sent 2018Dissidenty.xml_116]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 396250 Sent 2020_RFFIIndoneziya_ot_ada_do_raya.xml_602]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 396249 Sent 2020_RFFIIndoneziya_ot_ada_do_raya.xml_602]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 396251 Sent 2020_RFFIIndoneziya_ot_ada_do_raya.xml_602]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 396249 Sent 2020_RFFIIndoneziya_ot_ada_do_raya.xml_602]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+Warnings: 61
+SYNTAX errors: 48
+*** FAILED *** with 48 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
 (weight=0.111111111111111) * (score{genres}=0.166666666666667) = 0.0185185185185185
 (weight=0.111111111111111) * (score{lemmas}=0.8) = 0.0888888888888889
@@ -102,6 +198,6 @@ Validity: 1
 (weight=0.0740740740740741) * (score{split}=1) = 0.0740740740740741
 (weight=0.111111111111111) * (score{tags}=0.8) = 0.0888888888888889
 (weight=0.111111111111111) * (score{udeprels}=0.735135135135135) = 0.0816816816816817
-(TOTAL score=0.811311311311311) * (availability=1) * (validity=1) = 0.811311311311311
-STARS = 4
-UD_Russian-SynTagRus	0.811311311311311	4
+(TOTAL score=0.811311311311311) * (availability=1) * (validity=0.01) = 0.00811311311311311
+STARS = 0
+UD_Russian-SynTagRus	0.00811311311311311	0
